@@ -1,8 +1,12 @@
 .tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 150px;
     width: 150px;
-    background: green;
+    background: linear-gradient(77deg, green,transparent);
     position: absolute;
+   bottom:0;
     transition:all .5s;
     border-radius: 5%;
     &:hover{
@@ -11,18 +15,36 @@
         
 
     }
+    &_resume{
+        width: 80%;
+        height:80%;
+    }
+    &_about-content{
+        width: 60%;
+        height:80%;
+        right:5%;
+        border:1px solid white;
+
+    }
+    &_about-photo{
+        width: 20%;
+        height:20%;
+        left: 5%;
+        top: 5%;
+        border:1px solid red
+    }
 }
 
 
 
 .apples{
-    left:7%
+    left:9%
 }
 .grapes{
-    left: 63%
+    left:63%
 }
 .oranges{
-    left:18%
+    left:22%
 }
 .limes{
     left:33%
@@ -31,5 +53,6 @@
     left:48%
 }
 .bananas{
-    left:75%
+    left:79%
 }
+

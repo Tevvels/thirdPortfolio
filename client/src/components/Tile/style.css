@@ -1,10 +1,21 @@
 .tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 150px;
   width: 150px;
-  background: green;
+  background: linear-gradient(77deg, green, transparent);
   position: absolute;
+  bottom: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
+  border-radius: 5%;
 }
 
 .tile:hover {
@@ -12,8 +23,28 @@
   width: 200px;
 }
 
+.tile_resume {
+  width: 80%;
+  height: 80%;
+}
+
+.tile_about-content {
+  width: 60%;
+  height: 80%;
+  right: 5%;
+  border: 1px solid white;
+}
+
+.tile_about-photo {
+  width: 20%;
+  height: 20%;
+  left: 5%;
+  top: 5%;
+  border: 1px solid red;
+}
+
 .apples {
-  left: 7%;
+  left: 9%;
 }
 
 .grapes {
@@ -21,7 +52,7 @@
 }
 
 .oranges {
-  left: 18%;
+  left: 22%;
 }
 
 .limes {
@@ -33,6 +64,6 @@
 }
 
 .bananas {
-  left: 75%;
+  left: 79%;
 }
 /*# sourceMappingURL=style.css.map */

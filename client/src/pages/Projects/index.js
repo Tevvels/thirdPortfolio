@@ -1,28 +1,22 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import Card from '../../components/Card'
 import Tile from '../../components/Tile'
-const Projects = ({children},props) => {
-const [offsetY, setOffsetY] =useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset)
-  useEffect(()=>{
-    window.addEventListener("scroll",handleScroll);
+const Projects = (props) => {
 
-    return () => window.removeEventListener("scroll",handleScroll)
-  },[])
     return (
-        <div>
-            <Card style={props.style}>
-                {children}
+        <>
+            <Card className={`card projects`}>
+              
             
-      <Tile style={{transform: `translateY(-${offsetY * 0.30}px)`}} project={`Apples`} className={`apples`}/>
-      <Tile style={{transform: `translateY(-${offsetY * 0.52}px)`}} project={`oranges`} className={`oranges`} />
-      <Tile style={{transform: `translateY(-${offsetY * 0.30}px)`}} project={`grapes`} className={`grapes`} />
-      <Tile style={{transform: `translateY(-${offsetY * 0.52}px)`}} project={`bananas`} className={`bananas`}/>
-      <Tile style={{transform: `translateY(-${offsetY * 0.30}px)`}} project={`limes`} className={`limes`} />
-      <Tile style={{transform: `translateY(-${offsetY * 0.52}px)`}} project={`lemons`} className={`lemons`} />
+      <Tile positive={'-'} parallax={0.15} project={`Apples`} className={`apples`}/>
+      <Tile positive={'-'} parallax={0.52} project={`oranges`} className={`oranges`} />
+      <Tile positive={'-'} parallax={0.15} project={`grapes`} className={`grapes`} />
+      <Tile positive={'-'} parallax={0.52} project={`bananas`} className={`bananas`}/>
+      <Tile positive={'-'} parallax={0.15} project={`limes`} className={`limes`} />
+      <Tile positive={'-'} parallax={0.52} project={`lemons`} className={`lemons`} >hello</Tile>
     
             </Card>
-        </div>
+        </>
     )
 }
 

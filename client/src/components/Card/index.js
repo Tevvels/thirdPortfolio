@@ -1,12 +1,12 @@
 import React from 'react'
 import "./style.css"
 
-const Card = ({children},props) => {
+const Card = (props) => {
     return (
-        <div className={`card`} style={props.style}>
+        <div className={props.className} style={props.style}>
 
 
-           {children}
+           {props.children}
         </div>
     )
 }
