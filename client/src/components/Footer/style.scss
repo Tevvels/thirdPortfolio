@@ -1,6 +1,10 @@
 .footer{
     height: 250px;
-    background: linear-gradient(45deg,black,lime);
-    position: absolute;
-    bottom:0;
+    background: linear-gradient(45deg,black,#300);
+    position: relative;
+    bottom:-550px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }

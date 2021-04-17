@@ -1,11 +1,18 @@
 import React from 'react'
 
-const Container = (props) => {
+const Container = ({children}) => {
     return (
         <div>
-            <h1>hello again{props.name}</h1>
+            {children}
         </div>
     )
 }
+
+// Container.propTypes = {
+//     children: PropTypes.oneOfType([
+//         PropTypes.arrayOf(PropTypes.element),
+//         propTypes.element.isRequired
+//     ])
+// }
 
 export default Container

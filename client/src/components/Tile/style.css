@@ -2,5 +2,37 @@
   height: 150px;
   width: 150px;
   background: green;
+  position: absolute;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.tile:hover {
+  height: 300px;
+  width: 200px;
+}
+
+.apples {
+  left: 7%;
+}
+
+.grapes {
+  left: 63%;
+}
+
+.oranges {
+  left: 18%;
+}
+
+.limes {
+  left: 33%;
+}
+
+.lemons {
+  left: 48%;
+}
+
+.bananas {
+  left: 75%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ import "./style.css";
 
 const Tile = (props) => {
     return (
-        <div className={` tile`} style={props.style}>
+        <div className={` tile ${props.className}`} style={props.style}>
             {props.project}
         </div>
     )
