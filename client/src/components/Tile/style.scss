@@ -37,6 +37,34 @@
         bottom:25%;
         border:1px solid white;
 
+        &-name{
+            top:0;
+        }
+
+        &-email{
+            bottom:90%;
+        }
+        &-submit{
+            font-size: 25px;
+            height: 35px;
+            width: 60px;
+            bottom: 5%;
+
+        }
+
+        &-name, &-email{
+            width: 40%;
+            height: 5%;
+            background: pink;
+        }
+
+        &-textarea{
+            width: 60%;
+            height: 30%;
+            background: hotpink;
+            bottom: 15%;
+        }
+
     }
 }
 

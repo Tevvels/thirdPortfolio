@@ -46,6 +46,34 @@
   border: 1px solid white;
 }
 
+.tile_contact-name {
+  top: 0;
+}
+
+.tile_contact-email {
+  bottom: 90%;
+}
+
+.tile_contact-submit {
+  font-size: 25px;
+  height: 35px;
+  width: 60px;
+  bottom: 5%;
+}
+
+.tile_contact-name, .tile_contact-email {
+  width: 40%;
+  height: 5%;
+  background: pink;
+}
+
+.tile_contact-textarea {
+  width: 60%;
+  height: 30%;
+  background: hotpink;
+  bottom: 15%;
+}
+
 .projects {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

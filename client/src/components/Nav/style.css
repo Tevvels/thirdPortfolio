@@ -1,5 +1,6 @@
 .navigation {
-  background: blue;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(transparent));
+  background: linear-gradient(to right, black, transparent);
   font-size: 15px;
   color: white;
   display: -webkit-box;
@@ -20,6 +21,8 @@
   height: 300px;
   -webkit-transition: all .25s;
   transition: all .25s;
+  -webkit-box-shadow: 0 0 1rem black;
+          box-shadow: 0 0 1rem black;
 }
 
 .navigation_button {
@@ -58,6 +61,26 @@
   z-index: 9;
 }
 
+.navigation_list-item {
+  text-transform: uppercase;
+  padding-top: 15px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(black));
+  background: linear-gradient(to right, transparent, black);
+  color: grey;
+  text-decoration: none;
+}
+
+.navigation_list-item:active {
+  color: white;
+}
+
+.navigation_list-item:hover {
+  color: white;
+}
+
 .showMenu {
   width: 100%;
 }
@@ -71,7 +94,19 @@
   position: relative;
   -webkit-transform-origin: 1px;
           transform-origin: 1px;
-  background: black;
+  background: darkolivegreen;
+}
+
+.hamburger:hover:first-child {
+  background: white;
+}
+
+.hamburger:hover:nth-child(2) {
+  background: grey;
+}
+
+.hamburger:hover:nth-child(3) {
+  background: white;
 }
 
 .hamburger_open {

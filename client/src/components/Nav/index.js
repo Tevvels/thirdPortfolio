@@ -17,9 +17,12 @@ const Nav = (props) => {
                     
                     </button>
                 <ul className={`navigation navigation_list ${navbarOpen ? "showMenu" : ""}`}>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
+                    <a href={`#about`} className={`navigation_list-item`}>Home</a>
+                    <a href={`#projects`} className={`navigation_list-item`}>Projects</a>
+                    <a href={`#resume`}
+                     className={`navigation_list-item`}>Resume</a>
+                    <a href={`#contact`}
+                    className={`navigation_list-item`}>Contact</a>
                 </ul>
             </nav>
         </div>

@@ -11,7 +11,7 @@ const About = () => {
 
             <Card className={`card about`}>
 
-            <div className={`about_header`}>
+            <div id={`about`} className={`about_header`}>
                 <h1>Hello and Welcome!</h1>
             </div>
 

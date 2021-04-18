@@ -2,7 +2,7 @@
   height: 250px;
   background: linear-gradient(45deg, black, #300);
   position: relative;
-  bottom: -680px;
+  bottom: -880px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 1550px) {
   .footer {
-    bottom: -375px;
+    bottom: -475px;
   }
 }
 /*# sourceMappingURL=style.css.map */

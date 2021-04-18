@@ -15,8 +15,9 @@ const Projects = (props) => {
             <Card 
             className={`card`}>
               
-            <div className={`projects_header`}>
-                <h1>Hello and Welcome!</h1>
+            <div id={`projects`}
+             className={`projects_header`}>
+                <h2>Hello and Welcome!</h2>
             </div>
       <Tile 
       positive={'-'} 
@@ -28,7 +29,7 @@ const Projects = (props) => {
         <a href={`https://brawndoplant.herokuapp.com/garden`}>
             <img className={`brawndo projects_photo`} src={brawndo} alt={`brawndo`} />
         </a>
-        <h1>Apples</h1>
+        <h2>Brawndo</h2>
       </Tile>
       
       <Tile 
@@ -39,7 +40,7 @@ const Projects = (props) => {
         <a href={`https://brawndoplant.herokuapp.com/garden`}>
             <img className={`brawndo projects_photo`} src={codequiz} alt={`codequiz`} />
         </a>
-        <h1>Apples</h1>
+        <h2>Code Quiz</h2>
 
       </Tile>
       <Tile 
@@ -50,7 +51,7 @@ const Projects = (props) => {
              <a href={`https://brawndoplant.herokuapp.com/garden`}>
                  <img className={`brawndo projects_photo`} src={one} alt={`one`} />
             </a>
-  <h1>Apples</h1>
+  <h2>Deep Vibrations</h2>
   </Tile>
       <Tile 
       positive={'-'} 
@@ -60,7 +61,7 @@ const Projects = (props) => {
                   <a href={`https://brawndoplant.herokuapp.com/garden`}>
             <img className={`brawndo projects_photo`} src={daburger} alt={`daburger`} />
         </a>
-        <h1>Apples</h1>
+        <h2>Da Burger</h2>
       </Tile>
 
       <Tile 
@@ -71,7 +72,7 @@ const Projects = (props) => {
         <a href={`https://brawndoplant.herokuapp.com/garden`}>
             <img className={`brawndo projects_photo`} src={dayplanner} alt={`dayplanner`} />
         </a>
-        <h1>Apples</h1>
+        <h2>Daily Planner</h2>
 
       </Tile>
       <Tile 
@@ -80,7 +81,7 @@ const Projects = (props) => {
       className={`lemons projects`} >        <a href={`https://brawndoplant.herokuapp.com/garden`}>
       <img className={`brawndo projects_photo`} src={brawndo} alt={`brawndo`} />
   </a>
-  <h1>Apples</h1></Tile>
+  <h2>Apples</h2></Tile>
     
             </Card>
         </>
