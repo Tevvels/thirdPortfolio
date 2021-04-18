@@ -1,0 +1,31 @@
+.about{
+
+    &_photo{
+        overflow: hidden;
+        border-radius: 10%;
+    }
+    &_contact{
+        display: flex;
+    
+        &-num{
+            flex-direction: column;
+        }
+    }
+    &_column{
+        text-align: center;
+        color:rgba(220,220,220,0.5) ;
+        padding: 25px;
+        background:linear-gradient(to right, black 85%,transparent) ;
+        height: 94%;
+        border-radius: 7.7% 0 0 6.7%;
+        width: 40%;
+       
+
+    }
+    &_header{
+        position: absolute;
+        left: 45%;
+        color: white;
+    }
+
+}

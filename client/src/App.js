@@ -1,27 +1,27 @@
-import React, {useState,useEffect} from "react";
-// import './App.css';
-import Container from './components/Container.js'
-import Card from './components/Card.js'
-import Nav from './components/Nav'
-function App() {
-  const [offsetY, setOffsetY] =useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset)
-  useEffect(()=>{
-    window.addEventListener("scroll",handleScroll);
+import React from "react";
 
-    return () => window.removeEventListener("scroll",handleScroll)
-  },[])
+
+import Footer from './components/Footer'
+import Nav from './components/Nav'
+import Projects from './pages/Projects'
+import About from './pages/About'
+import Resume from './pages/Resume'
+import Contact from './pages/Contact'
+
+function App() {
+
   return (
     <div className="App">
-        <h1 className={`App-logo`}style={{transform: `translateY(${offsetY * 0.5}px)`}}>oh hello</h1>
-        <h1 className={`App-logo`}style={{transform: `translateY(${offsetY * 0.7}px)`}}>oh hello</h1>
-        <h1 className={`App-logo`}style={{transform: `translateY(${offsetY * 0.9}px)`}}>oh hello</h1>
-       <Nav className={`App-logo`}style={{transform: `translateY(${offsetY * 0.9}px)`}}/>
-       <Card/> 
-       <Container name={` chris`} /> 
-        
+
+      <Nav/>
+      <About />
+      <Projects />
+      <Resume />
+      <Contact />
+      <Footer />        
     </div>
   );
 }
 
 export default App;
+ 

@@ -1,0 +1,118 @@
+.tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+    background: linear-gradient(77deg, green,transparent);
+    position: absolute;
+   bottom:0;
+    transition:all .5s;
+    border-radius: 10%;
+
+    &_resume{
+        text-align: center;
+        width: 80%;
+        height:80%;
+    }
+    &_about-content{
+        // flex-direction: column;
+        width: 60%;
+        height:80%;
+        right:5%;
+    
+
+    }
+    &_about-photo{
+        width: 20%;
+        height:20%;
+        left: 8%;
+        top: 15%;
+        border:1px solid red
+    }
+    &_contact{
+        width: 60%;
+        height:80%;
+        right:5%;
+        bottom:25%;
+        border:1px solid white;
+
+        &-name{
+            top:0;
+        }
+
+        &-email{
+            bottom:90%;
+        }
+        &-submit{
+            font-size: 25px;
+            height: 35px;
+            width: 60px;
+            bottom: 5%;
+
+        }
+
+        &-name, &-email{
+            width: 40%;
+            height: 5%;
+            background: pink;
+        }
+
+        &-textarea{
+            width: 60%;
+            height: 30%;
+            background: hotpink;
+            bottom: 15%;
+        }
+
+    }
+}
+
+.projects{
+    flex-direction:column;
+    color: white;
+    overflow: hidden;
+    background: black;
+
+    &_photo{
+        height: 500px;
+    }
+
+}
+
+.apples{
+    left:9%;
+
+  
+}
+
+.projects:hover{
+    height: 550px;
+    padding: 5px;
+    width: 350px;
+    z-index:12;
+    position: absolute;
+    border-radius: 5%;
+    border: 2px solid gold;
+    box-shadow:0 0 1px black;
+    background:black;
+
+
+}
+
+.grapes{
+    left:63%
+}
+.oranges{
+    left:22%
+}
+.limes{
+    left:33%
+}
+.lemons{
+    left:48%
+}
+.bananas{
+    left:79%
+}
+

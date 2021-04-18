@@ -1,0 +1,24 @@
+.contact_header {
+  position: absolute;
+  left: 45%;
+  top: -5%;
+  color: white;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+}
+
+.input-submit {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.input-submit:active {
+  background: white;
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */
