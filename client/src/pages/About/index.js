@@ -8,7 +8,15 @@ const About = () => {
 
     return (
         <>
+
             <Card className={`card about`}>
+
+            <div className={`about_header`}>
+                <h1>Hello and Welcome!</h1>
+            </div>
+
+
+
                 <Tile positive={''} parallax={.26}  className={`tile_about-photo`}>
                     <img className={`about_photo`} src={myFace}/>
                 </Tile>

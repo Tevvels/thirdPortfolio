@@ -22,8 +22,14 @@
   padding: 25px;
   background: -webkit-gradient(linear, left top, right top, color-stop(85%, black), to(transparent));
   background: linear-gradient(to right, black 85%, transparent);
-  height: 90%;
+  height: 92%;
   border-radius: 7.7% 0 0 6.7%;
   width: 40%;
+}
+
+.about_header {
+  position: absolute;
+  left: 45%;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

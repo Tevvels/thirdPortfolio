@@ -16,11 +16,16 @@
         color:rgba(220,220,220,0.5) ;
         padding: 25px;
         background:linear-gradient(to right, black 85%,transparent) ;
-        height: 90%;
+        height: 92%;
         border-radius: 7.7% 0 0 6.7%;
         width: 40%;
-        
+       
 
+    }
+    &_header{
+        position: absolute;
+        left: 45%;
+        color: white;
     }
 
 }

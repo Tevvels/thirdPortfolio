@@ -10,8 +10,12 @@ const Tile = (props) => {
       return () => window.removeEventListener("scroll",handleScroll)
     },[])
     return (
-        <div className={` tile ${props.className}`} style={{transform: `translateY(${props.positive}${offsetY * props.parallax}px)`}}>
-        {props.children}
+        <div 
+          className={` tile ${props.className}`} 
+          style={{transform: `translateY(${props.positive}${offsetY * props.parallax}px)`}}
+
+        >
+          {props.children}
         </div>
     )
 }
