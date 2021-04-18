@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../../components/Card'
 import Tile from '../../components/Tile'
-const About = (props) => {
+const About = () => {
 
     return (
         <>

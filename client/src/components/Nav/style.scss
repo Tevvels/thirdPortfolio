@@ -3,10 +3,80 @@
     font-size: 15px;
     color:white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 5px;
+    left: -40px;
     width: 300px;
     height: 300px;
+    transition: all .25s;
+
+    &_button{
+        position: fixed;
+        left:40px;
+        top:40px;
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        padding: 0;
+        z-index: 10;
+
+        
+    }
+
+    &_list{
+        overflow-y: scroll;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        max-width: 290px;
+        z-index: 9;
+
+        
+    }
+
+
+}
+
+.showMenu{
+    width: 100%;
+}
+
+
+.hamburger{
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+    transition:all .3s;
+    position: relative;
+    transform-origin: 1px;
+    background: black;
+
+    &_open{
+        background: white;
+        
+        &:first-child{
+            transform: rotate(45deg);
+        }
+        &:nth-child(2){
+            transform: translateX(1rem);
+            background: transparent;
+        }
+        &:nth-child(3){
+            transform: rotate(-45deg);
+        }
+    }
+
 }

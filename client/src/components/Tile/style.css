@@ -43,6 +43,14 @@
   border: 1px solid red;
 }
 
+.tile_contact {
+  width: 60%;
+  height: 80%;
+  right: 5%;
+  bottom: 25%;
+  border: 1px solid white;
+}
+
 .apples {
   left: 9%;
 }

@@ -6,9 +6,9 @@ const Contact = (props) => {
         <>
             <Card className={`card contact`}>
                 <Tile 
-                className={`tile-contact`} 
-                parallax={0.15}
-                positive={'-'}>
+                className={`tile_contact`} 
+                parallax={0.05}
+                positive={' '}>
                     contact page
                 </Tile>
             </Card>
