@@ -12,8 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 >Christopher Watkins</h1>
-      <h2 >Full Stack Developer</h2>
+
       <Nav/>
       <About />
       <Projects />

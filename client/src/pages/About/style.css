@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.about_photo {
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.about_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_contact-num {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about_column {
+  text-align: center;
+  color: rgba(220, 220, 220, 0.5);
+  padding: 25px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(85%, black), to(transparent));
+  background: linear-gradient(to right, black 85%, transparent);
+  height: 90%;
+  border-radius: 7.7% 0 0 6.7%;
+  width: 40%;
+}
+/*# sourceMappingURL=style.css.map */

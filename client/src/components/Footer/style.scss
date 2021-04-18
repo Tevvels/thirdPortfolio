@@ -2,9 +2,15 @@
     height: 250px;
     background: linear-gradient(45deg,black,#300);
     position: relative;
-    bottom:-750px;
+    bottom:-680px;
     display:flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+@media screen and (max-width: 1550px) {
+    .footer{
+    bottom:-375px;
+    }
 }

@@ -1,4 +1,19 @@
-.resume_display {
+.resume_section {
   width: 95%;
+  height: 95%;
+}
+
+.resume_article {
+  width: 100%;
+  height: 100%;
+}
+
+.resume_download {
+  text-align: center;
+}
+
+.resume_display {
+  height: 95%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

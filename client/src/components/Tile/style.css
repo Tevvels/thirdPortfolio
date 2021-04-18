@@ -15,12 +15,7 @@
   bottom: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
-  border-radius: 5%;
-}
-
-.tile:hover {
-  height: 300px;
-  width: 200px;
+  border-radius: 10%;
 }
 
 .tile_resume {
@@ -32,14 +27,13 @@
   width: 60%;
   height: 80%;
   right: 5%;
-  border: 1px solid white;
 }
 
 .tile_about-photo {
   width: 20%;
   height: 20%;
-  left: 5%;
-  top: 5%;
+  left: 8%;
+  top: 15%;
   border: 1px solid red;
 }
 

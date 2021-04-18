@@ -8,29 +8,30 @@
     position: absolute;
    bottom:0;
     transition:all .5s;
-    border-radius: 5%;
-    &:hover{
-        height:300px;
-        width: 200px;
+    border-radius: 10%;
+    // &:hover{
+    //     height:300px;
+    //     width: 200px;
         
 
-    }
+    // }
     &_resume{
         width: 80%;
         height:80%;
     }
     &_about-content{
+        // flex-direction: column;
         width: 60%;
         height:80%;
         right:5%;
-        border:1px solid white;
+        
 
     }
     &_about-photo{
         width: 20%;
         height:20%;
-        left: 5%;
-        top: 5%;
+        left: 8%;
+        top: 15%;
         border:1px solid red
     }
     &_contact{
