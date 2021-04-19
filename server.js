@@ -10,7 +10,7 @@ app.use("/",router)
 app.listen(5000,()=> console.log("connected"));
 
 const contactEmail = nodemailer.createTransport({
-    host: "smtp.example.com",
+    host: "https://cbwportfolio.herokuapp.com/",
     port: 587,
     auth:{
         user:"chrisbwatkins@gmail.com",
