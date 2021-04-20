@@ -22,13 +22,14 @@ class Contact extends Component {
 
       handleChange = (event) =>{
         const field = event.target.id;
+        console.log(field)
         if(field === "name"){
             this.setState({name: event.target.value});
         }
-        if(field === "email"){
+       else if(field === "email"){
             this.setState({email: event.target.value});
         }
-        if(field === "message"){
+      else  if(field === "message"){
             this.setState({message: event.target.value});
         }
             
@@ -36,6 +37,7 @@ class Contact extends Component {
 
      handleSubmit = (event) =>{
     
+        console.log(this.state)
         event.preventDefault();
         this.setState({status: "Sending"});
         axios({
@@ -47,7 +49,7 @@ class Contact extends Component {
                 console.log("message sent");
                 this.setState({ name : "", email: "", status: "Submit"});
             }
-            if(response.data.status === "failed"){
+          else  if(response.data.status === "failed"){
                 console.log("Message Failed")
             }
         })
@@ -59,7 +61,7 @@ class Contact extends Component {
         let buttontext = this.state.status;
     return (
         <>
-        <form onSubmit={this.handleSubmit.bind(this)} method={`post`}>
+        <form onSubmit={this.handleSubmit.bind(this)} method={`POST`}>
             <Card className={`card contact`}>
             <div id={`contact`}
             className={`contact_header`}>
@@ -74,11 +76,15 @@ class Contact extends Component {
                     className={`tile_contact-name`} 
                     parallax={0.05}
                     positive={''}>
+                        <label htmlFor={`name`}>Name:
+                        </label>
                         <input 
                         className={`input`}
+                        id={`name`}
+                        name={`name`}
                         type={`text`} 
                         placeholder={`name please`}
-                        value={this.state.name}
+                        // value={this.state.name}
                         onChange={this.handleChange.bind(this)}
                         required
                         />
@@ -89,9 +95,10 @@ class Contact extends Component {
                     positive={''}>
                         <input 
                         className={`input`} 
-                        type={`email`} 
+                        type={`email`}
+                        id={`email`}
                         placeholder={`email please`}
-                        value={this.state.email}
+                        // value={this.state.email}
                         onChange={this.handleChange.bind(this)}
                         required
                         />
@@ -103,17 +110,19 @@ class Contact extends Component {
                         <textarea 
                         className={`input`} 
                         placeholder={"something would like to say"}
-                        value={this.state.message}
+                        id={`message`}
+
+                        // value={this.state.message}
                         onChange={this.handleChange.bind(this)}
                         required
                         
-                        />
+                        ></textarea>
                    </Tile>
                     <Tile 
                     className={`tile_contact-submit`} 
                     parallax={0.01}
                     positive={'-'}>
-                        <button type={`submit`} className={` input input-submit`} placeholder={"something would like to say"}>{buttontext}</button>}
+                        <button type={`submit`} className={` input input-submit`} placeholder={"something would like to say"}>{buttontext}</button>
                    </Tile>
                 </Tile>
             </Card>

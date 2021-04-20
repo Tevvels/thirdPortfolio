@@ -10,11 +10,12 @@ app.use("/",router)
 app.listen(5000,()=> console.log("connected"));
 
 const contactEmail = nodemailer.createTransport({
-    host: "https://cbwportfolio.herokuapp.com/",
+    host: "smtp.gmail.com",
     port: 587,
     auth:{
+        
         user:"chrisbwatkins@gmail.com",
-        pass: "Flargin2",
+        pass: "gxcesfgnyswykrsv",
     }
 });
 
@@ -28,16 +29,19 @@ contactEmail.verify((error)=> {
 });
 
 router.post("/contact",(req,res) => {
+
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
     const mail = {
-        sender: email,
+        from: name,
         to: "chrisbwatkins@gmail.com",
         subject: "Contact Form Message",
         html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
     };
-    constactEmail.sendMail(mail,(error)=>{
+    console.log(req)
+    contactEmail.sendMail(mail,(error)=>{
+        console.log(mail);
         if(error){
             res.json({status:"failed"});
         } else {
