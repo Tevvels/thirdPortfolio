@@ -11,7 +11,7 @@ import "./style.css"
 const Projects = () => {
     return (
         <>
-            <Card className={`card`}>        
+            <Card className={`card card_projects`}>        
                 <div id={`projects`} className={`projects_header`}>
                     <h2>Projects</h2>
                 </div>

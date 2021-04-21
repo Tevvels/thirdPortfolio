@@ -93,4 +93,16 @@
 .bananas {
   left: 79%;
 }
+
+@media only screen and (max-width: 760px) {
+  .projects_container {
+    position: relative;
+    left: 0;
+    top: 25%;
+    height: 500px;
+  }
+  .oranges {
+    top: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

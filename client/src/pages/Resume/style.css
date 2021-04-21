@@ -1,3 +1,15 @@
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .resume_section {
   width: 95%;
   height: 95%;
@@ -27,5 +39,11 @@
   position: absolute;
   color: white;
   top: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .resume {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

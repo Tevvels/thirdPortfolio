@@ -47,3 +47,18 @@
     text-transform: uppercase;
     
 }
+
+
+
+@media only screen and (max-width:760px){
+    .about{
+        flex-direction: column;
+    
+        &_column{
+            width: 100%;
+            left:0;
+            background: linear-gradient(to bottom, black 85%, transparent);
+        }
+    
+    }
+}

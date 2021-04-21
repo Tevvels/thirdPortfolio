@@ -71,3 +71,69 @@
 }
 
 
+
+@media only screen and (max-width:760px) {
+    .tile{
+
+        width: 100%;
+
+
+
+        &_about-content{
+            flex-direction: column;
+            width: 100%;
+            top: 30%;
+            left: 0;
+            top: 35%;
+        }
+        &_about-photo{
+            width: 90%;
+            left: 5%;
+            top: 10%;
+        }
+
+
+        &_contact{
+            width: 100%;
+            left: 0;
+        
+            &-name{
+                top: -10%;
+            }
+            &-email {
+                top: -5%;
+            }
+        
+        
+            &-name,&-email,&-textarea{
+                width: 100%;
+            }
+
+
+            &-name,&-email{
+                height: 10%;
+            }
+
+            &-submit{
+                font-size: 35px;
+                height: 55px;
+                width: 90px;
+                bottom: 5%;
+    
+            }
+
+        }
+
+
+        &_resume{
+
+            width:110%;
+
+        }
+
+
+    }
+
+
+}
+

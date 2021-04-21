@@ -61,8 +61,9 @@ class Contact extends Component {
         let buttontext = this.state.status;
         return (
             <>
-                <form onSubmit={this.handleSubmit.bind(this)} method={`POST`}>
-                    <Card className={`card contact`}>
+                <Card className={`card contact`}>
+                    <form onSubmit={this.handleSubmit.bind(this)} method={`POST`}>
+
                         <div id={`contact`} className={`contact_header`}>
                             <h1>Contact</h1>
                         </div>
@@ -83,8 +84,9 @@ class Contact extends Component {
                                     <button type={`submit`} className={` input input-submit`} placeholder={"something would like to say"}>{buttontext}</button>
                             </Tile>
                         </Tile>
-                    </Card>
-                </form>
+                    </form>
+                </Card>
+               
             </>
         )
     }
