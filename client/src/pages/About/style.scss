@@ -19,13 +19,31 @@
         height: 94%;
         border-radius: 7.7% 0 0 6.7%;
         width: 40%;
-       
-
+    
     }
     &_header{
         position: absolute;
         left: 45%;
         color: white;
     }
+    &_text{
+        padding-left:75px;
+        padding-right:75px;
+        padding-bottom:25px;
+        color: white;
+        line-height: 2;
+        font-size: 20px;
+    }
 
+
+
+}
+
+
+
+.icons{
+    font-size: 25px;
+    color: green;
+    text-transform: uppercase;
+    
 }

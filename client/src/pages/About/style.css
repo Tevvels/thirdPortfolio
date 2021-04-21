@@ -32,4 +32,19 @@
   left: 45%;
   color: white;
 }
+
+.about_text {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 25px;
+  color: white;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.icons {
+  font-size: 25px;
+  color: green;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */

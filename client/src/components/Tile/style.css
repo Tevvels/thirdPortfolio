@@ -16,6 +16,8 @@
   -webkit-transition: all .5s;
   transition: all .5s;
   border-radius: 10%;
+  -webkit-box-shadow: 0 0 1rem black;
+          box-shadow: 0 0 1rem black;
 }
 
 .tile_resume {
@@ -64,64 +66,18 @@
 .tile_contact-name, .tile_contact-email {
   width: 40%;
   height: 5%;
-  background: pink;
+}
+
+.tile_contact-name, .tile_contact-email, .tile_contact-textarea {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tile_contact-textarea {
   width: 60%;
   height: 30%;
-  background: hotpink;
   bottom: 15%;
-}
-
-.projects {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  overflow: hidden;
-  background: black;
-}
-
-.projects_photo {
-  height: 500px;
-}
-
-.apples {
-  left: 9%;
-}
-
-.projects:hover {
-  height: 550px;
-  padding: 5px;
-  width: 350px;
-  z-index: 12;
-  position: absolute;
-  border-radius: 5%;
-  border: 2px solid gold;
-  -webkit-box-shadow: 0 0 1px black;
-          box-shadow: 0 0 1px black;
-  background: black;
-}
-
-.grapes {
-  left: 63%;
-}
-
-.oranges {
-  left: 22%;
-}
-
-.limes {
-  left: 33%;
-}
-
-.lemons {
-  left: 48%;
-}
-
-.bananas {
-  left: 79%;
 }
 /*# sourceMappingURL=style.css.map */

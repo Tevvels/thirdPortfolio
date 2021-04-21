@@ -9,6 +9,7 @@
    bottom:0;
     transition:all .5s;
     border-radius: 10%;
+    box-shadow: 0 0 1rem black;
 
     &_resume{
         text-align: center;
@@ -55,64 +56,18 @@
         &-name, &-email{
             width: 40%;
             height: 5%;
-            background: pink;
+        }
+        &-name, &-email, &-textarea{
+            flex-direction: column;
         }
 
         &-textarea{
             width: 60%;
             height: 30%;
-            background: hotpink;
             bottom: 15%;
         }
 
     }
 }
 
-.projects{
-    flex-direction:column;
-    color: white;
-    overflow: hidden;
-    background: black;
-
-    &_photo{
-        height: 500px;
-    }
-
-}
-
-.apples{
-    left:9%;
-
-  
-}
-
-.projects:hover{
-    height: 550px;
-    padding: 5px;
-    width: 350px;
-    z-index:12;
-    position: absolute;
-    border-radius: 5%;
-    border: 2px solid gold;
-    box-shadow:0 0 1px black;
-    background:black;
-
-
-}
-
-.grapes{
-    left:63%
-}
-.oranges{
-    left:22%
-}
-.limes{
-    left:33%
-}
-.lemons{
-    left:48%
-}
-.bananas{
-    left:79%
-}
 
