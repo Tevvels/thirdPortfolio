@@ -3,11 +3,9 @@
     justify-content: center;
     align-items: center;
 
-    // background: linear-gradient(77deg, green,transparent);
     position: absolute;
    bottom:0;
     transition:all .5s;
-    border-radius: 10%;
     // box-shadow: 0 0 1rem black;
 
     &_resume{
@@ -36,13 +34,15 @@
         right:5%;
         bottom:25%;
         border:1px solid white;
+        background: linear-gradient(to right,transparent,olive);
+
 
         &-name{
-            top:0;
+            top:20%;
         }
 
         &-email{
-            bottom:90%;
+            bottom:55%;
         }
         &-submit{
             font-size: 25px;
@@ -54,7 +54,7 @@
 
         &-name, &-email{
             width: 40%;
-            height: 5%;
+            height: 10%;
         }
         &-name, &-email, &-textarea{
             flex-direction: column;

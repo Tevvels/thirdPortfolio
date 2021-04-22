@@ -9,6 +9,11 @@ body{
     margin: 0 auto;
     position: relative;
 
+    
+    &_projects{
+        height: 200vh;
+    }
+
 }
 
 
@@ -19,7 +24,7 @@ body{
 
 
         &_projects{
-            height: 350vh;
+            height: 425vh;
         }
     }
 }

@@ -17,11 +17,6 @@
   cursor: pointer;
 }
 
-.input-submit:active {
-  background: white;
-  color: green;
-}
-
 .input_label {
   color: white;
 }

@@ -12,7 +12,6 @@
   bottom: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
-  border-radius: 10%;
 }
 
 .tile_resume {
@@ -41,14 +40,16 @@
   right: 5%;
   bottom: 25%;
   border: 1px solid white;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(olive));
+  background: linear-gradient(to right, transparent, olive);
 }
 
 .tile_contact-name {
-  top: 0;
+  top: 20%;
 }
 
 .tile_contact-email {
-  bottom: 90%;
+  bottom: 55%;
 }
 
 .tile_contact-submit {
@@ -60,7 +61,7 @@
 
 .tile_contact-name, .tile_contact-email {
   width: 40%;
-  height: 5%;
+  height: 10%;
 }
 
 .tile_contact-name, .tile_contact-email, .tile_contact-textarea {
