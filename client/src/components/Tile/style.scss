@@ -2,14 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 150px;
-    background: linear-gradient(77deg, green,transparent);
+
+    // background: linear-gradient(77deg, green,transparent);
     position: absolute;
    bottom:0;
     transition:all .5s;
     border-radius: 10%;
-    box-shadow: 0 0 1rem black;
+    // box-shadow: 0 0 1rem black;
 
     &_resume{
         text-align: center;
