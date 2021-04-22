@@ -16,7 +16,7 @@ const Flip = (props) => {
                     <h2 className={`projects_title`}>{props.header}</h2>
             </div>
             <div className={`projects_container flipped`} onMouseLeave={handleEvent} >
-                <a href={props.href}>                      
+                <a target={`_blank`} href={props.href}>                      
                 <h2 className={`projects_title`}>{props.header}</h2>
                 <p className={`projects_desc`}>{props.desc}</p>
 
