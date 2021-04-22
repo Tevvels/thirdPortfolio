@@ -20,11 +20,20 @@
         border: 1px solid white;
         cursor: pointer;
         
-        &:active{
-            background:white;
-            color:green;
-        }
+
+    }
+
+    &_label{
+        color: white;
+        
     }
 
 }
 
+
+@media only screen and (max-width:760px){
+    .contact{
+        width:100%;
+
+    }
+}

@@ -79,6 +79,7 @@
 
 .navigation_list-item:hover {
   color: white;
+  border-bottom: 1px solid white;
 }
 
 .showMenu {

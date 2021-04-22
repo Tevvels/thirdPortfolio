@@ -9,10 +9,22 @@ body{
     margin: 0 auto;
     position: relative;
 
+    
+    &_projects{
+        height: 200vh;
+    }
+
 }
 
-.resume{
-    display: flex;
-    justify-content: center;
-    align-items:center;
+
+
+@media only screen and (max-width:760px){
+    .card{
+        height: 200vh;
+
+
+        &_projects{
+            height: 425vh;
+        }
+    }
 }

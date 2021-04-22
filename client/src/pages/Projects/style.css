@@ -1,6 +1,153 @@
+.projects {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  overflow: hidden;
+  height: 250px;
+  position: absolute;
+  border: 2px solid gold;
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+  background: black;
+}
+
 .projects_header {
   position: absolute;
   left: 40%;
   color: white;
+  font-size: 25px;
+}
+
+.projects_desc {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.projects_photo {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.projects_title {
+  height: 20%;
+  position: relative;
+  top: 5%;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: lime;
+  left: 24.5%;
+}
+
+.projects_container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 450px;
+  width: 500px;
+  background: linear-gradient(77deg, olive, transparent);
+  -webkit-box-shadow: 0 0 1rem  black;
+          box-shadow: 0 0 1rem  black;
+}
+
+.projects_container:hover {
+  z-index: 100;
+}
+
+.projects_button {
+  height: 25px;
+  width: 60px;
+  background: transparent;
+  color: white;
+  border: 1px dotted white;
+  position: relative;
+  bottom: 5%;
+  left: 40%;
+}
+
+.projects_hoh {
+  left: 16%;
+}
+
+.projects_brawndo {
+  left: 54%;
+}
+
+.projects_deepvibes {
+  left: 44%;
+}
+
+.projects_daburger {
+  left: 10%;
+}
+
+.projects_codequiz {
+  left: 16%;
+}
+
+.projects_dailyplanner {
+  left: 54%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flipped {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 760px) {
+  .projects_container {
+    position: relative;
+    left: 0;
+    top: 25%;
+    height: 500px;
+  }
+  .projects_mobile {
+    left: 0;
+  }
+  .projects_hoh {
+    top: 16%;
+  }
+  .projects_brawndo {
+    top: 54%;
+  }
+  .projects_deepvibes {
+    top: 44%;
+  }
+  .projects_daburger {
+    top: 10%;
+  }
+  .projects_codequiz {
+    top: 16%;
+  }
+  .projects_dailyplanner {
+    top: 54%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,8 +17,13 @@
   cursor: pointer;
 }
 
-.input-submit:active {
-  background: white;
-  color: green;
+.input_label {
+  color: white;
+}
+
+@media only screen and (max-width: 760px) {
+  .contact {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

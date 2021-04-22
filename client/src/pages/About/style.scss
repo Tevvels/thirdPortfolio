@@ -2,7 +2,6 @@
 
     &_photo{
         overflow: hidden;
-        border-radius: 10%;
     }
     &_contact{
         display: flex;
@@ -17,15 +16,57 @@
         padding: 25px;
         background:linear-gradient(to right, black 85%,transparent) ;
         height: 94%;
-        border-radius: 7.7% 0 0 6.7%;
         width: 40%;
-       
-
+    
     }
     &_header{
         position: absolute;
         left: 45%;
         color: white;
     }
+    &_text{
+        padding-left:75px;
+        padding-right:75px;
+        padding-bottom:25px;
+        color: white;
+        line-height: 2;
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+
+.icons{
+    font-size: 25px;
+   
+    text-transform: uppercase;
+    
+}
+
+
+
+@media only screen and (max-width:760px){
+    .about{
+        flex-direction: column;
+    
+        &_column{
+            width: 100%;
+            left:0;
+            background: linear-gradient(to bottom, black 85%, transparent);
+        }
+    
+    }
+
+    
+.icons{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+
+}
 
 }

@@ -10,7 +10,7 @@ const Resume = (props) => {
             <Card  className={`card resume`}>
             <div id={`resume`}
              className={`resume_header`}>
-                <h1>Hello and Welcome!</h1>
+                <h1>Resume</h1>
             </div>
                 <Tile positive={'-'} parallax={0.02} className={`tile_resume`}>
                 <section className="resume_section" >

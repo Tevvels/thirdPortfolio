@@ -8,14 +8,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 250px;
-  width: 150px;
-  background: linear-gradient(77deg, green, transparent);
   position: absolute;
   bottom: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
-  border-radius: 10%;
 }
 
 .tile_resume {
@@ -44,14 +40,16 @@
   right: 5%;
   bottom: 25%;
   border: 1px solid white;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(olive));
+  background: linear-gradient(to right, transparent, olive);
 }
 
 .tile_contact-name {
-  top: 0;
+  top: 20%;
 }
 
 .tile_contact-email {
-  bottom: 90%;
+  bottom: 55%;
 }
 
 .tile_contact-submit {
@@ -63,65 +61,65 @@
 
 .tile_contact-name, .tile_contact-email {
   width: 40%;
-  height: 5%;
-  background: pink;
+  height: 10%;
+}
+
+.tile_contact-name, .tile_contact-email, .tile_contact-textarea {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tile_contact-textarea {
   width: 60%;
   height: 30%;
-  background: hotpink;
   bottom: 15%;
 }
 
-.projects {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  overflow: hidden;
-  background: black;
-}
-
-.projects_photo {
-  height: 500px;
-}
-
-.apples {
-  left: 9%;
-}
-
-.projects:hover {
-  height: 550px;
-  padding: 5px;
-  width: 350px;
-  z-index: 12;
-  position: absolute;
-  border-radius: 5%;
-  border: 2px solid gold;
-  -webkit-box-shadow: 0 0 1px black;
-          box-shadow: 0 0 1px black;
-  background: black;
-}
-
-.grapes {
-  left: 63%;
-}
-
-.oranges {
-  left: 22%;
-}
-
-.limes {
-  left: 33%;
-}
-
-.lemons {
-  left: 48%;
-}
-
-.bananas {
-  left: 79%;
+@media only screen and (max-width: 760px) {
+  .tile {
+    width: 100%;
+  }
+  .tile_about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    top: 35%;
+  }
+  .tile_about-photo {
+    width: 90%;
+    left: 5%;
+    top: 10%;
+  }
+  .tile_contact {
+    width: 100%;
+    left: 0;
+  }
+  .tile_contact-name {
+    top: -10%;
+  }
+  .tile_contact-email {
+    top: -5%;
+  }
+  .tile_contact-name, .tile_contact-email, .tile_contact-textarea {
+    width: 100%;
+  }
+  .tile_contact-name, .tile_contact-email {
+    height: 10%;
+  }
+  .tile_contact-submit {
+    font-size: 35px;
+    height: 55px;
+    width: 90px;
+    bottom: 5%;
+  }
+  .tile_resume {
+    width: 110%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

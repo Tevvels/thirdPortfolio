@@ -1,8 +1,164 @@
+
 .projects{
+    flex-direction:column;
+    color: white;
+    overflow: hidden;
+        height: 250px;
+
+        
+        position: absolute;
+        border: 2px solid gold;
+        box-shadow:0 0 1px black;
+        background:black;
+    
+    
 
     &_header{
         position: absolute;
         left:40%;
         color: white;
+        font-size: 25px;
     }
+
+    &_desc{
+        width: 100%;
+        align-items: center;
+        color: black;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    
+
+    
+    &_photo{
+        height:60%;
+        width: 100%;        
+        position: relative;
+    }
+    &_title{
+        height: 20%;
+        position: relative;
+        top: 5%;
+        width: 50%;
+        text-align:center;
+        text-decoration: none;
+        color: lime;
+        left: 24.5%;
+
+    }
+
+    &_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width: 500px;
+    background: linear-gradient(77deg, olive,transparent);
+    box-shadow: 0 0 1rem  black;
+        &:hover{
+            z-index: 100;
+        }
+
+    }
+
+    &_button{
+        height: 25px;
+        width: 60px;
+        background: transparent;
+        color: white;
+        border: 1px dotted white;
+        position: relative;
+        bottom: 5%;
+        left: 40%;
+    }
+
+
+
+
+
+
+    &_hoh{
+        left:16%
+    }
+    &_brawndo{
+        left:54%;
+    ;
+    }
+
+    &_deepvibes{
+        left:44%
+    }
+    
+    &_daburger{
+        left:10%
+    }
+    &_codequiz{
+        left:16%
+    }
+    &_dailyplanner{
+        left:54%
+    }
+
+}
+
+a{
+
+    text-decoration: none;
+}
+
+
+.flipped{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+@media only screen and (max-width:760px){
+    .projects{
+
+
+
+
+        &_container{
+            position: relative;
+            left: 0;
+            top: 25%;
+            height:500px;
+        }
+ 
+
+        &_mobile{
+            left:0
+        }
+
+
+        
+    &_hoh{
+        top:16%
+    }
+    &_brawndo{
+        top:54%;
+    ;
+    }
+
+    &_deepvibes{
+        top:44%
+    }
+    
+    &_daburger{
+        top:10%
+    }
+    &_codequiz{
+        top:16%
+    }
+    &_dailyplanner{
+        top:54%
+    }
+
+    }
+
+    
+
 }

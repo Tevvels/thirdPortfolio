@@ -2,13 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 150px;
-    background: linear-gradient(77deg, green,transparent);
+
     position: absolute;
    bottom:0;
     transition:all .5s;
-    border-radius: 10%;
+    // box-shadow: 0 0 1rem black;
 
     &_resume{
         text-align: center;
@@ -36,13 +34,15 @@
         right:5%;
         bottom:25%;
         border:1px solid white;
+        background: linear-gradient(to right,transparent,olive);
+
 
         &-name{
-            top:0;
+            top:20%;
         }
 
         &-email{
-            bottom:90%;
+            bottom:55%;
         }
         &-submit{
             font-size: 25px;
@@ -54,65 +54,85 @@
 
         &-name, &-email{
             width: 40%;
-            height: 5%;
-            background: pink;
+            height: 10%;
+        }
+        &-name, &-email, &-textarea{
+            flex-direction: column;
         }
 
         &-textarea{
             width: 60%;
             height: 30%;
-            background: hotpink;
             bottom: 15%;
         }
 
     }
 }
 
-.projects{
-    flex-direction:column;
-    color: white;
-    overflow: hidden;
-    background: black;
 
-    &_photo{
-        height: 500px;
+
+@media only screen and (max-width:760px) {
+    .tile{
+
+        width: 100%;
+
+
+
+        &_about-content{
+            flex-direction: column;
+            width: 100%;
+            top: 30%;
+            left: 0;
+            top: 35%;
+        }
+        &_about-photo{
+            width: 90%;
+            left: 5%;
+            top: 10%;
+        }
+
+
+        &_contact{
+            width: 100%;
+            left: 0;
+        
+            &-name{
+                top: -10%;
+            }
+            &-email {
+                top: -5%;
+            }
+        
+        
+            &-name,&-email,&-textarea{
+                width: 100%;
+            }
+
+
+            &-name,&-email{
+                height: 10%;
+            }
+
+            &-submit{
+                font-size: 35px;
+                height: 55px;
+                width: 90px;
+                bottom: 5%;
+    
+            }
+
+        }
+
+
+        &_resume{
+
+            width:110%;
+
+        }
+
+
     }
 
-}
 
-.apples{
-    left:9%;
-
-  
-}
-
-.projects:hover{
-    height: 550px;
-    padding: 5px;
-    width: 350px;
-    z-index:12;
-    position: absolute;
-    border-radius: 5%;
-    border: 2px solid gold;
-    box-shadow:0 0 1px black;
-    background:black;
-
-
-}
-
-.grapes{
-    left:63%
-}
-.oranges{
-    left:22%
-}
-.limes{
-    left:33%
-}
-.lemons{
-    left:48%
-}
-.bananas{
-    left:79%
 }
 
