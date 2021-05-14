@@ -3,16 +3,12 @@ body{
     
 }
 .card{
-    height: 115vh;
-    background: linear-gradient(to right , rgba(0,0,0,0.25)30%,rgba(005,255,255,0.25)65%, rgba(0,0,0,0.25));
-    top: 30%;
+     height: 100%;
+    // background: linear-gradient(to right , rgba(0,0,0,0.25)30%,rgba(005,255,255,0.25)65%, rgba(0,0,0,0.25));
+    // top: 30%;
     margin: 0 auto;
     position: relative;
 
-    
-    &_projects{
-        height: 200vh;
-    }
 
 }
 
@@ -20,11 +16,11 @@ body{
 
 @media only screen and (max-width:760px){
     .card{
-        height: 200vh;
+        // height: 200vh;
 
 
         &_projects{
-            height: 425vh;
+            // height: 425vh;
         }
     }
 }

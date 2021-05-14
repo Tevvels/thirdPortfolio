@@ -1,5 +1,86 @@
 .puzzle {
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+.puzzle_a {
+  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(orange));
+  background: linear-gradient(to bottom, pink, orange);
+  top: -3.2rem;
+}
+
+.puzzle_a_piece {
+  position: absolute;
+  top: 50 0%;
+  background: transparent;
+}
+
+.puzzle_b_piece {
+  background: transparent;
+  position: absolute;
+  top: 215rem;
+}
+
+.puzzle_b_piece-one {
+  -webkit-transform: translateY(150rem);
+          transform: translateY(150rem);
+}
+
+.puzzle_c_piece-one {
+  -webkit-transform: translateY(150rem);
+          transform: translateY(150rem);
+}
+
+.puzzle_d {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(orange));
+  background: linear-gradient(to bottom, pink, orange);
+}
+
+.puzzle_d_piece-one {
+  -webkit-transform: translateY(150rem);
+          transform: translateY(150rem);
+}
+
+.puzzle_e {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
+  background: linear-gradient(to top, red, orange);
+  height: 100vh;
+  width: 100vw;
+}
+
+.puzzle_e_piece {
+  top: 0;
+  left: 22%;
+}
+
+.puzzle_f {
+  height: 50vh;
+  top: -20rem;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(transparent));
+  background: linear-gradient(to top, transparent, transparent);
+  left: -5px;
+}
+
+.puzzle_f_piece {
+  top: -10rem;
+}
+
+.puzzle_g {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
+  background: linear-gradient(to top, red, orange);
+}
+
+.puzzle_piece {
+  background: transparent;
+  z-index: 52;
+  position: absolute;
+  height: 29vh;
+  width: 22vw;
+  border: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */

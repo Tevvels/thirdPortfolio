@@ -4,7 +4,10 @@
     display: flex;
     justify-content: center;
     align-items:center;
-
+    position: relative;
+    background: white;
+    z-index: 2;
+    height: 100vh;
 
 
     &_section{

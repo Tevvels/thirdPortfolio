@@ -2,4 +2,104 @@
     // background:white;
     height: 100%;
     width: 100%;
+    position: relative;
+
+ 
+
+    &_a{
+        background: linear-gradient(to bottom, pink, orange );
+        top: -3.2rem;
+        &_piece{
+        
+            position: absolute;
+            top: 50 0%;
+            background: transparent;
+
+        }
+    }
+    &_b{
+        &_piece{
+            background: transparent;
+
+            position: absolute;
+            top: 215rem;
+            &-one{
+
+                transform: translateY(150rem);
+    
+
+
+            }
+        }
+    }
+    &_c{
+
+        &_piece{
+
+
+            &-one{
+
+                transform: translateY(150rem);
+
+
+
+            }
+        }
+    }
+    &_d{
+        position: relative;
+        background: linear-gradient(to bottom, pink, orange );
+
+        &_piece{
+
+            &-one{
+
+                transform: translateY(150rem);
+                
+
+
+
+            }
+        }
+    }
+
+    &_e{
+        position: relative;
+        background: linear-gradient(to top, red, orange );
+        height: 100vh;
+        width: 100vw;
+        &_piece{
+            top: 0;
+            left: 22%;
+            
+        }
+    }
+    &_f{
+        height: 50vh;
+        top: -20rem;
+        position: relative;
+        background: linear-gradient(to top, transparent, transparent );
+        left:-5px;
+        &_piece{
+
+            top: -10rem;
+
+           
+        }
+    }
+    &_g{
+        position: relative;
+        background: linear-gradient(to top, red, orange );
+
+    }
+
+
+    &_piece{
+        background: transparent;
+        z-index: 52;
+        position: absolute;
+        height: 29vh;
+        width: 22vw;
+        border: 1px solid green;
+    }
 }

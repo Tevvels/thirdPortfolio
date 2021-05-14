@@ -14,7 +14,7 @@ const Projects = () => {
 
 
     return (
-        <>
+        <div className={`projects`}>
             <Card className={`card card_projects`}>        
                 <div id={`projects`} className={`projects_header`}>
                     <h2>Projects</h2>
@@ -65,7 +65,7 @@ const Projects = () => {
 
                 </Tile>
             </Card>
-        </>
+        </div>
     )
 }
 

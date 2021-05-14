@@ -16,6 +16,8 @@ import PuzzleB from './components/Puzzle/puzzle-b'
 import PuzzleC from './components/Puzzle/puzzle-c'
 import PuzzleD from './components/Puzzle/puzzle-d'
 import PuzzleE from './components/Puzzle/puzzle-e'
+import PuzzleF from './components/Puzzle/puzzle-f'
+import PuzzleG from './components/Puzzle/puzzle-g'
 import PuzzleAPieceOne from './components/Puzzle/puzzle-a/puzzle-a-piece-one';
 import PuzzleAPieceTwo from './components/Puzzle/puzzle-a/puzzle-a-piece-two';
 import PuzzleBPieceOne from './components/Puzzle/puzzle-b/puzzle-b-piece-one';
@@ -30,6 +32,11 @@ import PuzzleDPieceTwo from './components/Puzzle/puzzle-d/puzzle-d-piece-two';
 import PuzzleDPieceThree from './components/Puzzle/puzzle-d/puzzle-d-piece-three';
 import PuzzleDPieceFour from './components/Puzzle/puzzle-d/puzzle-d-piece-four';
 import PuzzleEPieceOne from './components/Puzzle/puzzle-e/puzzle-e-piece-one';
+import PuzzleFPieceOne from './components/Puzzle/puzzle-f/puzzle-f-piece-one';
+import PuzzleGPieceOne from './components/Puzzle/puzzle-g/puzzle-g-piece-one';
+import PuzzleGPieceTwo from './components/Puzzle/puzzle-g/puzzle-g-piece-two';
+import PuzzleGPieceThree from './components/Puzzle/puzzle-g/puzzle-g-piece-three';
+import PuzzleGPieceFour from './components/Puzzle/puzzle-g/puzzle-g-piece-four';
 
 
 function App() {
@@ -37,8 +44,7 @@ function App() {
   return (
     <div className="App">
 
-      {/* <Nav/> */}
-      <h1>hello</h1>
+      <Nav/>
       <PuzzleE />
       <PuzzleEPieceOne />
 
@@ -53,7 +59,7 @@ function App() {
       <PuzzleBPieceFour />
       <PuzzleB />
   
-      {/* <Projects /> */}
+      <Projects />
       <PuzzleC />
       <PuzzleCPieceOne />
       <PuzzleCPieceTwo />
@@ -67,9 +73,16 @@ function App() {
       <PuzzleD />
    
 
-      {/* <Resume /> */}
-      <Icon2 />
-      {/* <Contact /> */}
+      <Resume />
+      <PuzzleG/>
+      <PuzzleGPieceOne />
+      <PuzzleGPieceTwo />
+      <PuzzleGPieceThree />
+      <PuzzleGPieceFour />
+      <Contact />
+      <PuzzleFPieceOne />
+
+      <PuzzleF />
       <Footer />        
     </div>
   );

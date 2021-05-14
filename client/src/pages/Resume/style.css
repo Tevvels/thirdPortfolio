@@ -8,6 +8,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  background: white;
+  z-index: 2;
+  height: 100vh;
 }
 
 .resume_section {
