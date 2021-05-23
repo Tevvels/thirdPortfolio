@@ -2,7 +2,7 @@ import React from "react";
 
 function PuzzleC() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" className={`puzzle puzzle_c`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 230 500 100" className={`puzzle puzzle_c`}>
   <path
         fill="white"
         stroke="white"

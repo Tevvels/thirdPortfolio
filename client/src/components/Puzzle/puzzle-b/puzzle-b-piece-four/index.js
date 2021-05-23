@@ -6,7 +6,7 @@ function PuzzleBPieceFour() {
   return (
     <Tile positive={'-'} parallax={0.76} className={`puzzle puzzle_piece puzzle_b  puzzle_b_piece puzzle_b_piece-four`}>
 
-    <svg xmlns="http://www.w3.org/2000/svg"viewBox="360 135 80 80">
+    <svg xmlns="http://www.w3.org/2000/svg"viewBox="160 10 110 200">
 
          <path
         fill="white"

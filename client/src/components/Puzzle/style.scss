@@ -11,36 +11,70 @@
         top: -3.2rem;
         &_piece{
         
-            position: absolute;
-            top: 50 0%;
-            background: transparent;
-
-        }
-    }
-    &_b{
-        &_piece{
-            background: transparent;
-
-            position: absolute;
-            top: 215rem;
+            left:44.9%;
             &-one{
+                top:85rem;
 
-                transform: translateY(150rem);
-    
-
+            }
+            &-two{
+                top:77rem;
+                left: 15%;
 
             }
         }
     }
-    &_c{
-
+    &_b{
+        background: linear-gradient( to bottom, orange, pink);
+        bottom: 3.5rem;
         &_piece{
-
+            position: absolute;
+            top: 215rem;
+            &-one{
+                top: 250.43rem;
+                left: 68%;
+    
+            }
+            &-two{
+                top: 257.1rem;
+                left: 39.8%;
+    
+            }
+            &-three{
+                top: 259.8rem;
+                left: 29.8%;
+    
+            }
+            &-four{
+                top: 251.3rem;
+                left: 31.9%;
+    
+            }
+        }
+    }
+    &_c{
+        height: 50vh;
+        top: -12rem;
+        width: 100vw;
+        background: linear-gradient(to bottom, orange,pink);
+        &_piece{
 
             &-one{
 
-                transform: translateY(150rem);
+                top: 68.425rem;
+                left: -2.86rem;
+                
+            }
+            &-two{
 
+                top: 65rem;
+                left: 56.5%;
+
+
+            }
+            &-three{
+
+                top: 106.58rem;
+                left: 12%;
 
 
             }
@@ -49,49 +83,103 @@
     &_d{
         position: relative;
         background: linear-gradient(to bottom, pink, orange );
-
+        top:-13rem ;
         &_piece{
-
+        
             &-one{
 
-                transform: translateY(150rem);
+                
+                top:456.6rem;
+                left: 28.5%;
+
+
+            }
+            &-two{
+
+                
+
+            top:418rem;
+            left: 56%;
+
+            }
+            &-three{
+
                 
 
 
+                top:420rem;
+                left: 30%;
+
+            }
+            &-four{
+
+                
+
+
+                top:427rem;
+                left: 20.8%;
 
             }
         }
     }
 
     &_e{
+        top: 2.2rem;
         position: relative;
         background: linear-gradient(to top, red, orange );
         height: 100vh;
         width: 100vw;
         &_piece{
-            top: 0;
-            left: 22%;
+            top: 63.7%;
+            left: 31.65%;
             
         }
     }
     &_f{
+        width: 100vw;
         height: 50vh;
         top: -20rem;
         position: relative;
-        background: linear-gradient(to top, transparent, transparent );
+        background: linear-gradient(to top, orange, red );
         left:-5px;
         &_piece{
+            top: 410rem;
+            left: 65%;
+        
 
-            top: -10rem;
-
-           
         }
     }
     &_g{
+        top:-13.5rem;
         position: relative;
         background: linear-gradient(to top, red, orange );
+        &_piece{
+            &-one{
+                top: 320rem;
 
+                left: 20.5%;
+
+            }
+            &-two{
+                top: 325rem;
+
+                left: 25.6%;
+            }
+            &-three{
+                top: 320rem;
+
+                left: 30.6%;
+            }
+            &-four{
+                top: 320rem;
+
+                left: 75%;
+            }
+
+
+        }
     }
+
 
 
     &_piece{
@@ -100,6 +188,6 @@
         position: absolute;
         height: 29vh;
         width: 22vw;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
 }

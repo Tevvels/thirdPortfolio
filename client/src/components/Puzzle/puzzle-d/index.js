@@ -3,7 +3,7 @@ import React from "react";
 
 function PuzzleD() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" className={`puzzle puzzle_d`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 168 500 250" className={`puzzle puzzle_d`}>
   <path
         fill="#FFF"
         stroke="#FFF"

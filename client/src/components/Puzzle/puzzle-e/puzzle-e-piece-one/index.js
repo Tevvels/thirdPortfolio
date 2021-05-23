@@ -3,8 +3,8 @@ import Tile from '../../../Tile';
 
 function PuzzleEPieceOne() {
   return (
-    <Tile positive={''} parallax={0.16} className={`puzzle puzzle_piece puzzle_e  puzzle_e_piece puzzle_e_piece-one`}>
-    <svg xmlns="http://www.w3.org/2000/svg"viewBox="360 135 80 80">
+    <Tile positive={'-'} parallax={0.46} className={`puzzle puzzle_piece puzzle_e  puzzle_e_piece puzzle_e_piece-one`}>
+    <svg xmlns="http://www.w3.org/2000/svg"viewBox="157 383 108 108">
       <path
         fill="white"
         stroke="white"

@@ -4,7 +4,7 @@ import React from "react";
 function PuzzleE() {
   return (
     
-    <div className={`puzzle puzzle_e`}>    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 280 500 300">
+    <div className={`puzzle puzzle_e`}>    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 268 500 300">
       <path
         fill="white"
         stroke="white"

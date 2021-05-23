@@ -2,10 +2,10 @@ import React from "react";
 
 function PuzzleGPieceOne() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="360 135 80 80"  className={`puzzle_g puzzle_piece puzzle_g_piece puzzle_g_piece-one`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="110 75 68 68"  className={`puzzle_g puzzle_piece puzzle_g_piece puzzle_g_piece-one`}>
       <path
-        fill="#000"
-        stroke="#000"
+        fill="#fff"
+        stroke="#fff"
         d="M125.437 110.002L118.796 107.38 112.711 107.231 108.817 110.213 107.195 113.601 107.748 117.916 111.22 121.542 118.159 121.728 125.37 118.789 125.69 134.463 150.889 138.897 166.738 136.149 166.729 122.071 162.988 123.889 159.422 125.128 155.002 123.405 153.216 118.394 156.269 112.828 160.795 111.91 164.438 112.497 166.247 112.997 166.393 94.047 147.763 92.688 150.388 87.757 150.215 83.248 147.547 79.818 143.499 78.619 139.901 79.514 138.235 82.068 138.377 85.579 139.121 88.484 142.24 92.727 125.504 93.774z"
       ></path>
 

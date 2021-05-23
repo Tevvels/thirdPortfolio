@@ -1,6 +1,6 @@
 .footer {
   height: 250px;
-  background: linear-gradient(45deg, black, #300);
+  background: white;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,6 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: orange;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,9 +4,9 @@ import Tile from '../../../Tile';
 
 function PuzzleAPieceOne() {
   return (
-    <Tile positive={'-'} parallax={0.76} className={`puzzle puzzle_piece puzzle_a  puzzle_a_piece puzzle_a_piece-one`}>
+    <Tile positive={''} parallax={0.16} className={`puzzle puzzle_piece puzzle_a  puzzle_a_piece puzzle_a_piece-one`}>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="360 135 80 80">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="225 20 110 110">
 
             <path
         fill="white"

@@ -69,14 +69,13 @@ class Contact extends Component {
                         </div>
 
                                 <label className={`input_label`}>Name</label>
-                                <input className={`input`} id={`name`} name={`name`} type={`text`} placeholder={`name please`} onChange={this.handleChange.bind(this)} required />
+                                <input className={`input input_name`} id={`name`} name={`name`} type={`text`} placeholder={`name please`} onChange={this.handleChange.bind(this)} required />
 
                                     <label className={`input_label`}>Email</label>                                 
-                                    <input className={`input`} type={`email`} id={`email`} placeholder={`email please`} onChange={this.handleChange.bind(this)} required />
+                                    <input className={`input input_email`} type={`email`} id={`email`} placeholder={`email please`} onChange={this.handleChange.bind(this)} required />
 
                                     <label className={`input_label`}>A brief message</label>
-                                    <textarea className={`input`} placeholder={"something would like to say"} id={`message`} onChange={this.handleChange.bind(this)} required />
->
+                                    <textarea className={`input input_textarea`} placeholder={"something would like to say"} id={`message`} onChange={this.handleChange.bind(this)} required />
                                     <button type={`submit`} className={` input input-submit`} placeholder={"something would like to say"}>{buttontext}</button>
 
                     </form>

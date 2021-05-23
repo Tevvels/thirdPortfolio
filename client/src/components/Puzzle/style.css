@@ -11,39 +11,101 @@
 }
 
 .puzzle_a_piece {
-  position: absolute;
-  top: 50 0%;
-  background: transparent;
+  left: 44.9%;
+}
+
+.puzzle_a_piece-one {
+  top: 85rem;
+}
+
+.puzzle_a_piece-two {
+  top: 77rem;
+  left: 15%;
+}
+
+.puzzle_b {
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(pink));
+  background: linear-gradient(to bottom, orange, pink);
+  bottom: 3.5rem;
 }
 
 .puzzle_b_piece {
-  background: transparent;
   position: absolute;
   top: 215rem;
 }
 
 .puzzle_b_piece-one {
-  -webkit-transform: translateY(150rem);
-          transform: translateY(150rem);
+  top: 250.43rem;
+  left: 68%;
+}
+
+.puzzle_b_piece-two {
+  top: 257.1rem;
+  left: 39.8%;
+}
+
+.puzzle_b_piece-three {
+  top: 259.8rem;
+  left: 29.8%;
+}
+
+.puzzle_b_piece-four {
+  top: 251.3rem;
+  left: 31.9%;
+}
+
+.puzzle_c {
+  height: 50vh;
+  top: -12rem;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(pink));
+  background: linear-gradient(to bottom, orange, pink);
 }
 
 .puzzle_c_piece-one {
-  -webkit-transform: translateY(150rem);
-          transform: translateY(150rem);
+  top: 68.425rem;
+  left: -2.86rem;
+}
+
+.puzzle_c_piece-two {
+  top: 65rem;
+  left: 56.5%;
+}
+
+.puzzle_c_piece-three {
+  top: 106.58rem;
+  left: 12%;
 }
 
 .puzzle_d {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(pink), to(orange));
   background: linear-gradient(to bottom, pink, orange);
+  top: -13rem;
 }
 
 .puzzle_d_piece-one {
-  -webkit-transform: translateY(150rem);
-          transform: translateY(150rem);
+  top: 456.6rem;
+  left: 28.5%;
+}
+
+.puzzle_d_piece-two {
+  top: 418rem;
+  left: 56%;
+}
+
+.puzzle_d_piece-three {
+  top: 420rem;
+  left: 30%;
+}
+
+.puzzle_d_piece-four {
+  top: 427rem;
+  left: 20.8%;
 }
 
 .puzzle_e {
+  top: 2.2rem;
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
   background: linear-gradient(to top, red, orange);
@@ -52,27 +114,50 @@
 }
 
 .puzzle_e_piece {
-  top: 0;
-  left: 22%;
+  top: 63.7%;
+  left: 31.65%;
 }
 
 .puzzle_f {
+  width: 100vw;
   height: 50vh;
   top: -20rem;
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(transparent));
-  background: linear-gradient(to top, transparent, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(orange), to(red));
+  background: linear-gradient(to top, orange, red);
   left: -5px;
 }
 
 .puzzle_f_piece {
-  top: -10rem;
+  top: 410rem;
+  left: 65%;
 }
 
 .puzzle_g {
+  top: -13.5rem;
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
   background: linear-gradient(to top, red, orange);
+}
+
+.puzzle_g_piece-one {
+  top: 320rem;
+  left: 20.5%;
+}
+
+.puzzle_g_piece-two {
+  top: 325rem;
+  left: 25.6%;
+}
+
+.puzzle_g_piece-three {
+  top: 320rem;
+  left: 30.6%;
+}
+
+.puzzle_g_piece-four {
+  top: 320rem;
+  left: 75%;
 }
 
 .puzzle_piece {
@@ -81,6 +166,5 @@
   position: absolute;
   height: 29vh;
   width: 22vw;
-  border: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,31 +9,42 @@
     height: 100vh;
     z-index: 25;
     bottom: -2rem;
+    &_container{
+        display: flex;
+        padding-top: 5rem;
+        margin: 0 auto;
+
+    
+    }
+    &_a{
+            background: rgba(245,255,245,0.9)
+    }
     &_photo{
+        position: absolute;
         overflow: hidden;
         height: 20rem;  
-        width: 30rem;
-
+        width: 20rem;
+        margin-right: 1.3rem;
+        border-radius: 50%;
+        padding: 2rem;
+        border: 5px solid #bbb;
     }
     &_contact{
         display: flex;
-    
+        border: 5px solid #bbb;
         &-num{
             flex-direction: column;
         }
     }
     &_column{
-        text-align: center;
-        color:rgba(220,220,220,0.5) ;
-        padding: 25px;
-        background:linear-gradient(to right, black 85%,transparent) ;
-        height: 94%;
-        width: 40%;
-    
+        height: 23rem;
+        width: 20rem;
+        
     }
     &_header{
-        position: absolute;
-        left: 45%;
+        left: 30%;
+        font-size:2rem;
+        top:-40rem;
         color: white;
     }
     &_text{
@@ -42,19 +53,43 @@
         padding-bottom:25px;
         line-height: 2;
         font-size: 20px;
+        height: 23rem;
+        width: 20rem;
+        float: left;
     }
-
-
-
 }
 
 
 
 .icons{
-    font-size: 25px;
-   
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    font-size: 4rem;
+    background: #eff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid #eee;
     text-transform: uppercase;
-    
+    transition: all .5s;
+    &_a,&_i{
+        height: 6rem;
+        width: 6rem;
+        padding: 1rem;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{ 
+           box-shadow: 0 0 1rem #bbb inset;
+    }
 }
 
 
@@ -80,4 +115,7 @@
 
     }
 
+}
+#root{
+    width:100vw
 }
