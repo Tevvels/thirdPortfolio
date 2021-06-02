@@ -1,8 +1,16 @@
 import React from "react";
-
+import PuzzleDPieceOne from './puzzle-d-piece-one/';
+import PuzzleDPieceTwo from './puzzle-d-piece-two/';
+import PuzzleDPieceThree from './puzzle-d-piece-three/';
+import PuzzleDPieceFour from './puzzle-d-piece-four/';
 
 function PuzzleD() {
   return (
+    <>
+          <PuzzleDPieceOne />
+      <PuzzleDPieceTwo />
+      <PuzzleDPieceThree />
+      <PuzzleDPieceFour />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 168 500 250" className={`puzzle puzzle_d`}>
   <path
         fill="#FFF"
@@ -11,6 +19,7 @@ function PuzzleD() {
       ></path>
 
     </svg>
+    </>
   );
 }
 

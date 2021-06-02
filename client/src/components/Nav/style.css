@@ -1,6 +1,6 @@
 .navigation {
-  background: -webkit-gradient(linear, left top, right top, from(black), to(transparent));
-  background: linear-gradient(to right, black, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
   font-size: 15px;
   color: white;
   display: -webkit-box;
@@ -66,8 +66,8 @@
   height: 50px;
   width: 100%;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(black));
-  background: linear-gradient(to right, transparent, black);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8));
   color: grey;
   text-decoration: none;
 }

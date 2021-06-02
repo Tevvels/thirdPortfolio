@@ -1,25 +1,24 @@
 
 .projects{
-    flex-direction:column;
+    display: flex;
+    position: relative;
     background:white;
     color: white;
     overflow: hidden;
     position: relative;
     width: 100%;
     height: 100vh;
-    top: -11.4rem;
- 
+    top: -12rem;
 
 
     &_header{
-        position: absolute;
-        left:40%;
+
         color: white;
         font-size: 25px;
     }
 
     &_desc{
-        width: 100%;
+        width: 95%;
         align-items: center;
         color: black;
         position: relative;
@@ -27,36 +26,41 @@
         text-align: center;
     }
 
+        &_tech{
+            display: flex;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: #777;
+            margin-left: .2rem;
+        }
     
 
     
     &_photo{
-        height:60%;
-        width: 100%;        
+        height:40%;
+        width: auto;        
         position: relative;
     }
     &_title{
-        height: 20%;
+        height: 10%;
         position: relative;
         top: 5%;
         width: 50%;
         text-align:center;
         text-decoration: none;
-        color: lime;
+        color: #777;
         left: 24.5%;
 
     }
 
     &_container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 450px;
-        width: 500px;
-    background: linear-gradient(77deg, olive,transparent);
-        &:hover{
-            z-index: 100;
-        }
+        position: relative;
+        height: 80%;
+        width: auto;
+        margin: 3rem;
+        border-radius: 3%;
+        border: 5px solid #fef
+
 
     }
 
@@ -75,30 +79,8 @@
 
 
 
-
-    &_hoh{
-        left:16%
-    }
-    &_brawndo{
-        left:54%;
-    ;
-    }
-
-    &_deepvibes{
-        left:44%
-    }
-    
-    &_daburger{
-        left:10%
-    }
-    &_codequiz{
-        left:16%
-    }
-    &_dailyplanner{
-        left:54%
-    }
-
 }
+
 
 a{
 
@@ -106,17 +88,11 @@ a{
 }
 
 
-.flipped{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
 @media only screen and (max-width:760px){
     .projects{
 
 
-
+      
 
         &_container{
             position: relative;

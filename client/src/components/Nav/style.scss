@@ -1,5 +1,5 @@
 .navigation{
-    background:linear-gradient(to right,black,transparent);
+    background:linear-gradient(to right,rgba(0,0,0,0.8[]),transparent);
     font-size: 15px;
     color:white;
     display: flex;
@@ -50,7 +50,7 @@
             height: 50px;
             width: 100%;
             text-align: center;
-            background: linear-gradient(to right,transparent,black);
+            background: linear-gradient(to right,transparent,rgba(0,0,0,0.8));
             color: grey;
             text-decoration: none;
         

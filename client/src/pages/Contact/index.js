@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import axios from "axios";
 import Card from '../../components/Card'
-import Tile from '../../components/Tile'
 import "./style.css"
 
 

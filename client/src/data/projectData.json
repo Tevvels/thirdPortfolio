@@ -1,0 +1,28 @@
+{
+      "projects":[
+      {
+        "header":"Hall of Heroes",
+        "source":"../../images/home-ss.PNG",
+        "ref":"https://hall-of-heroes.herokuapp.com/",
+        "desc":"Dungeon and Dragons character creator and tutorial",
+        "tech":[
+            "ReactJS",
+            "MongoDB",
+            "Sass",
+            "Auth0"
+        ]
+      }, 
+      {
+        "header":"Brawndo",
+        "source":"brawndo",
+        "ref":"https://brawndoplant.herokuapp.com/garden",
+        "desc":"Water monitor for plants",
+        "tech":[
+            "ReactJS",
+            "MongoDB",
+            "Sass"
+            
+        ]
+      } 
+    ]
+}

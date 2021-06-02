@@ -1,7 +1,13 @@
 import React from "react";
-
+import PuzzleCPieceOne from './puzzle-c-piece-one/';
+import PuzzleCPieceTwo from './puzzle-c-piece-two/';
+import PuzzleCPieceThree from './puzzle-c-piece-three/';
 function PuzzleC() {
   return (
+    <>
+      <PuzzleCPieceOne />
+      <PuzzleCPieceTwo />
+      <PuzzleCPieceThree />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 230 500 100" className={`puzzle puzzle_c`}>
   <path
         fill="white"
@@ -11,6 +17,7 @@ function PuzzleC() {
 
     
     </svg>
+  </>
   );
 }
 

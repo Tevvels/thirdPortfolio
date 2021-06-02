@@ -1,9 +1,12 @@
 import React from "react";
+import PuzzleEPieceOne from './puzzle-e-piece-one/';
 
 
 function PuzzleE() {
   return (
-    
+    <>
+    <PuzzleEPieceOne />
+
     <div className={`puzzle puzzle_e`}>    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 268 500 300">
       <path
         fill="white"
@@ -13,7 +16,7 @@ function PuzzleE() {
 
     </svg>
     </div>
-
+</>
   );
 }
 

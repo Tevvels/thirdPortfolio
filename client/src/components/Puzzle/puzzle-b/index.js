@@ -1,7 +1,17 @@
 import React from "react";
+import PuzzleBPieceOne from './puzzle-b-piece-one/';
+import PuzzleBPieceTwo from './puzzle-b-piece-two/';
+import PuzzleBPieceThree from './puzzle-b-piece-three/';
+import PuzzleBPieceFour from './puzzle-b-piece-four/';
+
 
 function PuzzleB() {
   return (
+    <>
+    <PuzzleBPieceOne />
+    <PuzzleBPieceTwo />
+    <PuzzleBPieceThree />
+    <PuzzleBPieceFour />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" className={`puzzle puzzle_b`}>
     
   <path
@@ -12,6 +22,7 @@ function PuzzleB() {
       ></path>
    
     </svg>
+    </>
   );
 }
 
