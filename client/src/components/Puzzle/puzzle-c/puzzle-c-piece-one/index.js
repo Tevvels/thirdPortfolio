@@ -1,10 +1,10 @@
 import React from "react";
-import Tile from '../../../Tile';
+
 
 
 function PuzzleCPieceOne() {
   return (
-    <Tile positive={''} parallax={0.74} className={`puzzle puzzle_c puzzle_piece  puzzle_c_piece puzzle_c_piece-one`}>
+    <div positive={''} parallax={0.74} className={`puzzle puzzle_c puzzle_piece  puzzle_c_piece puzzle_c_piece-one`}>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 220 110 110">
 
@@ -15,7 +15,7 @@ function PuzzleCPieceOne() {
       ></path>
   
     </svg>
-    </Tile>
+    </div>
   );
 }
 

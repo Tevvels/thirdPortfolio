@@ -1,8 +1,55 @@
-import React from "react";
+import React,{useEffect} from "react";
 import PuzzleCPieceOne from './puzzle-c-piece-one/';
 import PuzzleCPieceTwo from './puzzle-c-piece-two/';
 import PuzzleCPieceThree from './puzzle-c-piece-three/';
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function PuzzleC() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(()=>{
+    gsap.from('.puzzle_c_piece-one',{
+      duration: 1.2,
+      y: '-321',
+      scrollTrigger: {
+        trigger: '.puzzle_c_piece-one',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+  useEffect(()=>{
+    gsap.from('.puzzle_c_piece-two',{
+      duration: 1.2,
+      y: '-321',
+      scrollTrigger: {
+        trigger: '.puzzle_c_piece-two',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+  useEffect(()=>{
+    gsap.from('.puzzle_c_piece-three',{
+      duration: 1.2,
+      y: '-321',
+      scrollTrigger: {
+        trigger: '.puzzle_c_piece-three',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
   return (
     <>
       <PuzzleCPieceOne />

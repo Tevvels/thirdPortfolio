@@ -1,15 +1,46 @@
-import React from "react";
+import React, {useRef,useEffect} from "react";
 import PuzzleAPieceOne from './puzzle-a-piece-one/';
 import PuzzleAPieceTwo from './puzzle-a-piece-two/';
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
+gsap.registerPlugin(ScrollTrigger);
 
 function PuzzleA() {
+useEffect(()=>{
+  gsap.from('.puzzle_a_piece-one',{
+    duration: 1.2,
+    y: '-321',
+    scrollTrigger: {
+      trigger: '.puzzle_a_piece-one',
+      start:'top 50%',
+      end:'+=500',
+      toggleActions: 'play none reverse none '
+    }
+  })  
+
+},[])
+
+
+useEffect(()=>{
+  gsap.from('.puzzle_a_piece-two',{
+    duration: 3,
+    y: '-201',
+    scrollTrigger: {
+      trigger: '.puzzle_a_piece-two',
+      start:'top 50%',
+      end:'+=500',
+      toggleActions: 'play none reverse none '
+    }
+  })
+  
+},{})
+
   return (
     <>
     <PuzzleAPieceOne />
     <PuzzleAPieceTwo />
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" className={`puzzle puzzle_a`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" className={`puzzle puzzle_a`} id={`puzzle_a`}>
 
       <path
         fill="white"

@@ -1,11 +1,73 @@
-import React from "react";
+import React,{useEffect} from "react";
 import PuzzleBPieceOne from './puzzle-b-piece-one/';
 import PuzzleBPieceTwo from './puzzle-b-piece-two/';
 import PuzzleBPieceThree from './puzzle-b-piece-three/';
 import PuzzleBPieceFour from './puzzle-b-piece-four/';
-
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function PuzzleB() {
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// useEffect(()=>{
+//   gsap.from('.puzzle_b_piece-one',{
+//     duration: 1.2,
+//     y: '-321',
+//     scrollTrigger: {
+//       trigger: '.puzzle_b_piece-one',
+//       start:'top 50%',
+//       markers:'true',
+//       end:'+=500',
+//       toggleActions: 'reverse none play none '
+//     }
+//   })  
+
+// },[])
+// useEffect(()=>{
+//   gsap.from('.puzzle_b_piece-two',{
+//     duration: 1.2,
+//     y: '-321',
+//     scrollTrigger: {
+//       trigger: '.puzzle_b_piece-two',
+//       start:'top 50%',
+//       markers:'true',
+//       end:'+=500',
+//       toggleActions: 'none reverse play none '
+//     }
+//   })  
+
+// },[])
+useEffect(()=>{
+  gsap.from('.puzzle_b_piece-three',{
+    duration: 1.2,
+    y: '-479',
+    scrollTrigger: {
+      trigger: '.puzzle_b_piece-three',
+      start:'top 50%',
+      markers:'true',
+      end:'+=500',
+      toggleActions: 'reverse none play none '
+    }
+  })  
+
+},[])
+useEffect(()=>{
+  gsap.from('.puzzle_b_piece-four',{
+    duration: 1.2,
+    y: '-301',
+    scrollTrigger: {
+      trigger: '.puzzle_b_piece-four',
+      start:'top 50%',
+      markers:'true',
+      end:'+=500',
+      toggleActions: 'reverse none play none '
+    }
+  })  
+
+},[])
+
   return (
     <>
     <PuzzleBPieceOne />

@@ -1,10 +1,25 @@
-import React from "react";
-import Tile from '../../../Tile';
+import React, { useRef, useEffect, useState } from "react";
+import {gsap} from "gsap";
+import { ScrollTrigger,timeline } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 function PuzzleAPieceOne() {
+
+  const [puzzleplace,setPuzzlePlace] = useState(0);
+  const puzzlePieceAOne = useRef(null);
+  const togglePlace = () => {
+    const location = puzzleplace !== '0' ? '0' : '400';
+    setPuzzlePlace(location);
+    console.log(puzzlePieceAOne.current);
+  }
+
+    
+
+
   return (
-    <Tile positive={''} parallax={0.16} className={`puzzle puzzle_piece puzzle_a  puzzle_a_piece puzzle_a_piece-one`}>
+    <div onClick={() => togglePlace()} ref={puzzlePieceAOne} positive={''} parallax={0.16} className={`puzzle puzzle_piece puzzle_a  puzzle_a_piece puzzle_a_piece-one moving`}>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="225 20 110 110">
 
@@ -15,7 +30,8 @@ function PuzzleAPieceOne() {
       ></path>
     
     </svg>
-    </Tile>
+    
+    </div>
   );
 }
 

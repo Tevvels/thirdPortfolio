@@ -13,12 +13,12 @@
         
             left:44.9%;
             &-one{
-                top:85rem;
-
+                top:114.1rem;
+                left: 45.5%;
             }
             &-two{
-                top:77rem;
-                left: 15%;
+                top:106.8rem;
+                left: 15.29%;
 
             }
         }
@@ -28,26 +28,25 @@
         bottom: 3.5rem;
         &_piece{
             position: absolute;
-            top: 215rem;
+            
             &-one{
-                top: 250.43rem;
+                top: 130.43rem;
                 left: 68%;
     
             }
             &-two{
-                top: 257.1rem;
+                top: 127.1rem;
                 left: 39.8%;
     
             }
             &-three{
-                top: 259.8rem;
+                top: 159.8rem;
                 left: 29.8%;
     
             }
             &-four{
-                top: 251.3rem;
-                left: 31.9%;
-    
+                top: 131.3rem;
+                left: 31.9%;  
             }
         }
     }
@@ -60,20 +59,20 @@
 
             &-one{
 
-                top: 68.425rem;
+                top: 242.655rem;
                 left: -2.86rem;
                 
             }
             &-two{
 
-                top: 65rem;
-                left: 56.5%;
+                top: 243.7rem;
+                left: 56.6%;
 
 
             }
             &-three{
 
-                top: 106.58rem;
+                top: 242.58rem;
                 left: 12%;
 
 
@@ -89,7 +88,7 @@
             &-one{
 
                 
-                top:456.6rem;
+                top:256.6rem;
                 left: 28.5%;
 
 
@@ -143,9 +142,9 @@
         background: linear-gradient(to top, orange, red );
         left:-5px;
         &_piece{
-            top: 410rem;
-            left: 65%;
-        
+            top: 424rem;
+            left: 70%;
+            transform: rotateZ(45deg);
 
         }
     }

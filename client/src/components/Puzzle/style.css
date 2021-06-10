@@ -15,12 +15,13 @@
 }
 
 .puzzle_a_piece-one {
-  top: 85rem;
+  top: 114.1rem;
+  left: 45.5%;
 }
 
 .puzzle_a_piece-two {
-  top: 77rem;
-  left: 15%;
+  top: 106.8rem;
+  left: 15.29%;
 }
 
 .puzzle_b {
@@ -31,26 +32,25 @@
 
 .puzzle_b_piece {
   position: absolute;
-  top: 215rem;
 }
 
 .puzzle_b_piece-one {
-  top: 250.43rem;
+  top: 130.43rem;
   left: 68%;
 }
 
 .puzzle_b_piece-two {
-  top: 257.1rem;
+  top: 127.1rem;
   left: 39.8%;
 }
 
 .puzzle_b_piece-three {
-  top: 259.8rem;
+  top: 159.8rem;
   left: 29.8%;
 }
 
 .puzzle_b_piece-four {
-  top: 251.3rem;
+  top: 131.3rem;
   left: 31.9%;
 }
 
@@ -63,17 +63,17 @@
 }
 
 .puzzle_c_piece-one {
-  top: 68.425rem;
+  top: 242.655rem;
   left: -2.86rem;
 }
 
 .puzzle_c_piece-two {
-  top: 65rem;
-  left: 56.5%;
+  top: 243.7rem;
+  left: 56.6%;
 }
 
 .puzzle_c_piece-three {
-  top: 106.58rem;
+  top: 242.58rem;
   left: 12%;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .puzzle_d_piece-one {
-  top: 456.6rem;
+  top: 256.6rem;
   left: 28.5%;
 }
 
@@ -129,8 +129,10 @@
 }
 
 .puzzle_f_piece {
-  top: 410rem;
-  left: 65%;
+  top: 424rem;
+  left: 70%;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 .puzzle_g {

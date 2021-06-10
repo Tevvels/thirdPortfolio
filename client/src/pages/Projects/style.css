@@ -4,12 +4,14 @@
   display: flex;
   position: relative;
   background: white;
-  color: white;
+  color: orange;
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 100vh;
   top: -12rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .projects_header {
@@ -22,7 +24,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
   position: relative;
   text-transform: uppercase;
   text-align: center;
@@ -34,12 +35,12 @@
   display: flex;
   font-size: 1.3rem;
   text-decoration: none;
-  color: #777;
   margin-left: .2rem;
+  color: orange;
 }
 
 .projects_photo {
-  height: 40%;
+  height: 45%;
   width: auto;
   position: relative;
 }
@@ -51,7 +52,6 @@
   width: 50%;
   text-align: center;
   text-decoration: none;
-  color: #777;
   left: 24.5%;
 }
 
@@ -59,9 +59,15 @@
   position: relative;
   height: 80%;
   width: auto;
-  margin: 3rem;
-  border-radius: 3%;
-  border: 5px solid #fef;
+  border-radius: 5%;
+  background: #dcc;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects_container:hover {
+  -webkit-box-shadow: inset 0 0 1.4rem #bbb;
+          box-shadow: inset 0 0 1.4rem #bbb;
 }
 
 .projects_button {

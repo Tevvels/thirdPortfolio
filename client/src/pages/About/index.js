@@ -25,7 +25,10 @@ const About = () => {
                         <div className={`about_container_inner`}>
                             <div>
                             <p className={`about_text`}>
-                                    My name is Christopher Watkins. I am a Developer here in Denver, CO. I have spent several years learning how to code. having just recently completed the University of Denver Coding bootcamp I have eager and ready to take on new projects and help the growth of any place I may happen to land 
+                                Full Stack Web Developer, using a background in finance and customer service to provide a friendly and
+                                welcoming environment while ensuring accuracy and professionalism with any project including websites and
+                                software. Recently earned a certificate in Full Stack Web Development from the University of Denver Coding
+                                Boot Camp. Passionate designer, creative and innovative problem solver. 
                                 </p>
                                 <i className={`about_i`}></i>
 
@@ -61,9 +64,14 @@ const About = () => {
                                     ))}
                                     </div>
                                 </div>
+
+                                
+                        <a href={`#contact`}
+                    className={`about_button`}>Contact Me</a>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
             </Card>
