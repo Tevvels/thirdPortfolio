@@ -10,8 +10,6 @@
   background: white;
   position: relative;
   height: 100vh;
-  z-index: 25;
-  bottom: -2rem;
 }
 
 .about_button {
@@ -202,5 +200,48 @@
 
 #root {
   width: 100vw;
+}
+
+@media only screen and (max-width: 720px) {
+  #root {
+    height: 120vh;
+    overflow-y: hidden;
+    background: orange;
+  }
+  .App {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about {
+    left: -25%;
+    background-color: transparent;
+    width: 200vw;
+    height: 100vh;
+    background-color: orange;
+  }
+  .about_header {
+    z-index: 15;
+    position: relative;
+    top: 0 !important;
+    padding: 5%;
+    left: 15%;
+  }
+  .about_photo {
+    display: none;
+  }
+  .about_text {
+    width: 90vw;
+    position: relative;
+  }
+  .about_column {
+    background: transparent;
+  }
+  .about_container {
+    width: 100%;
+  }
+  .about_container_inner {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,13 +6,15 @@ const Projects = () => {
 
 
     return (
-        <div>
-            <Card className={`projects`}>        
+        <div className={`projects_mobile`}>
+            <h2 className={`projects_header`}>Projects</h2>
 
+            <Card className={`projects`}>        
+          
                     {projects.map((item,index)=>(
                         <>
                          
-                            <div className={`projects_container`} key={index}>
+                            <div className={`projects_container`} key={index}>    
                             <a target={`_blank`} className={`projects_anchor`} href={item.ref}> 
                             <img className={`projects_photo`} src={item.source} alt={item.header} /> 
                                 <h2 className={`projects_title`}>{item.header}</h2>
@@ -26,7 +28,7 @@ const Projects = () => {
                                         ))}
                                     </ul>
                                     </a>
-                            
+
                             </div>
 
                         </>

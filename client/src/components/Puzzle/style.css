@@ -1,13 +1,11 @@
 .puzzle {
-  height: 100%;
-  width: 100%;
   position: relative;
 }
 
 .puzzle_a {
   background: -webkit-gradient(linear, left top, left bottom, from(pink), to(orange));
   background: linear-gradient(to bottom, pink, orange);
-  top: -3.2rem;
+  top: -4.2rem;
 }
 
 .puzzle_a_piece {
@@ -27,7 +25,7 @@
 .puzzle_b {
   background: -webkit-gradient(linear, left top, left bottom, from(orange), to(pink));
   background: linear-gradient(to bottom, orange, pink);
-  bottom: 3.5rem;
+  bottom: -0.5em;
 }
 
 .puzzle_b_piece {
@@ -50,14 +48,12 @@
 }
 
 .puzzle_b_piece-four {
-  top: 13np1 0.3rem;
+  top: 131.3rem;
   left: 31.9%;
 }
 
 .puzzle_c {
-  height: 50vh;
   top: -12rem;
-  width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, from(orange), to(pink));
   background: linear-gradient(to bottom, orange, pink);
 }
@@ -105,27 +101,16 @@
 }
 
 .puzzle_e {
-  top: 2.2rem;
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
   background: linear-gradient(to top, red, orange);
-  height: 100vh;
-  width: 100vw;
-}
-
-.puzzle_e_piece {
-  top: 63.7%;
-  left: 31.65%;
 }
 
 .puzzle_f {
-  width: 100vw;
-  height: 50vh;
-  top: -20rem;
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(orange), to(red));
-  background: linear-gradient(to top, orange, red);
-  left: -5px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, white), color-stop(90%, transparent));
+  background: linear-gradient(to top, white 10%, transparent 90%);
+  bottom: -1rem;
 }
 
 .puzzle_f_piece {
@@ -166,7 +151,11 @@
   background: transparent;
   z-index: 52;
   position: absolute;
-  height: 29vh;
-  width: 22vw;
+}
+
+@media only screen and (max-width: 720px) {
+  .puzzle_a, .puzzle_b, .puzzle_c, .puzzle_d, .puzzle_e, .puzzle_f, .puzzle_g {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
