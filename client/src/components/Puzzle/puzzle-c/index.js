@@ -8,9 +8,9 @@ function PuzzleC() {
   useEffect(()=>{
     gsap.from('.puzzle_c_piece-one',{
       duration: 1.2,
-      y: '-321',
+      y: '50',
       scrollTrigger: {
-        trigger: '.puzzle_c_piece-one',
+        trigger: '.puzzle_c',
         start:'top 50%',
         end:'+=500',
         
@@ -22,9 +22,9 @@ function PuzzleC() {
   useEffect(()=>{
     gsap.from('.puzzle_c_piece-two',{
       duration: 1.2,
-      y: '-321',
+      y: '95',
       scrollTrigger: {
-        trigger: '.puzzle_c_piece-two',
+        trigger: '.puzzle_c',
         start:'top 50%',
         end:'+=500',
         
@@ -36,9 +36,9 @@ function PuzzleC() {
   useEffect(()=>{
     gsap.from('.puzzle_c_piece-three',{
       duration: 1.2,
-      y: '-321',
+      y: '41',
       scrollTrigger: {
-        trigger: '.puzzle_c_piece-three',
+        trigger: '.puzzle_c',
         start:'top 50%',
         end:'+=500',
         
@@ -50,7 +50,7 @@ function PuzzleC() {
   return (
     <>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 230 500 100" className={`puzzle puzzle_c`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 230 500 200" className={`puzzle puzzle_c`}>
   <path
         fill="white"
         stroke="white"

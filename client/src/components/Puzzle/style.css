@@ -30,6 +30,7 @@
 
 .puzzle_b_piece {
   position: absolute;
+  z-index: 100;
 }
 
 .puzzle_b_piece-one {

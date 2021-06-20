@@ -28,6 +28,7 @@
         bottom: -0.5em;;
         &_piece{
             position: absolute;
+            z-index: 100;
             
             &-one{
                 top: 130.43rem;

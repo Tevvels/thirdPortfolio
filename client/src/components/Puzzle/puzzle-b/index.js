@@ -11,12 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 useEffect(()=>{
   gsap.from('.puzzle_b_piece-one',{
     duration: 1.2,
-    y: '1221',
+    y: '-50',
     scrollTrigger: {
-      trigger: '.puzzle_b_piece-one',
+      trigger: '.puzzle_b',
       start:'top 50%',
       end:'+=500',
-      toggleActions: 'reverse none play none '
+      toggleActions: 'none play reverse none'
     }
   })  
 
@@ -26,10 +26,10 @@ useEffect(()=>{
     duration: 1.2,
     y: '-21',
     scrollTrigger: {
-      trigger: '.puzzle_b_piece-two',
+      trigger: '.puzzle_b',
       start:'top 50%',
       end:'+=500',
-      toggleActions: 'none reverse play none '
+      toggleActions: 'none play reverse none '
     }
   })  
 
@@ -37,12 +37,12 @@ useEffect(()=>{
 useEffect(()=>{
   gsap.from('.puzzle_b_piece-three',{
     duration: 1.2,
-    y: '-479',
+    y: '-18',
     scrollTrigger: {
-      trigger: '.puzzle_b_piece-three',
+      trigger: '.puzzle_b',
       start:'top 50%',
       end:'+=500',
-      toggleActions: 'reverse none play none '
+      toggleActions: 'none play reverse none'
     }
   })  
 
@@ -50,12 +50,12 @@ useEffect(()=>{
 useEffect(()=>{
   gsap.from('.puzzle_b_piece-four',{
     duration: 1.2,
-    y: '-401',
+    y: '-71',
     scrollTrigger: {
-      trigger: '.puzzle_b_piece-four',
+      trigger: '.puzzle_b',
       start:'top 50%',
       end:'+=500',
-      toggleActions: 'reverse none play none '
+      toggleActions: 'none play reverse none'
     }
   })  
 

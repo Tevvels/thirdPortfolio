@@ -1,6 +1,6 @@
-.root, .App {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, orange), color-stop(10.2%, white), color-stop(29.5%, orange), color-stop(80%, red)) !important;
-  background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 29.5%, red 80%) !important;
+#root, .App {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, orange), color-stop(10.2%, white), color-stop(26.5%, orange), color-stop(80%, red)) !important;
+  background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 26.5%, red 80%) !important;
 }
 
 .resume {

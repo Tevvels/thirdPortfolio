@@ -1,6 +1,67 @@
-import React from "react";
+import React,{useEffect} from "react";
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function puzzleG() {
+function PuzzleG() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(()=>{
+    gsap.from('.puzzle_g_piece-one',{
+      duration: 1.2,
+      y: '50',
+      scrollTrigger: {
+        trigger: '.puzzle_g',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+  useEffect(()=>{
+    gsap.from('.puzzle_g_piece-two',{
+      duration: 1.2,
+      y: '50',
+      scrollTrigger: {
+        trigger: '.puzzle_g',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+  useEffect(()=>{
+    gsap.from('.puzzle_g_piece-three',{
+      duration: 1.2,
+      y: '50',
+      scrollTrigger: {
+        trigger: '.puzzle_g',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+  useEffect(()=>{
+    gsap.from('.puzzle_g_piece-four',{
+      duration: 1.2,
+      y: '50',
+      scrollTrigger: {
+        trigger: '.puzzle_g',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+
   return (
     <>
 
@@ -52,4 +113,4 @@ className={`puzzle_g_piece-four`}
   );
 }
 
-export default puzzleG;
+export default PuzzleG;

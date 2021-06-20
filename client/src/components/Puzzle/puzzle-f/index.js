@@ -1,10 +1,28 @@
-import React from "react";
+import React,{useEffect} from "react";
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function PuzzleF() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(()=>{
+    gsap.from('.puzzle_f_piece-one',{
+      duration: 1.2,
+      y: '-120',
+      scrollTrigger: {
+        trigger: '.puzzle_f',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
   return (
     <>
     <div  className={`puzzle puzzle_f`}>  
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 255">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 285">
         <path
           fill="#FFF"
           stroke="#FFF"

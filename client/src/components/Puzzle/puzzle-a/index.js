@@ -8,12 +8,12 @@ function PuzzleA() {
 useEffect(()=>{
   gsap.from('.puzzle_a_piece-one',{
     duration: 1.2,
-    y: '-321',
+    y: '131',
     scrollTrigger: {
-      trigger: '.puzzle_a_piece-one',
+      trigger: '.puzzle_a',
       start:'top 50%',
-      end:'+=500',
-      toggleActions: 'play none reverse none '
+      end:'+=600',
+      toggleActions: 'play pause reverse pause '
     }
   })  
 
@@ -22,14 +22,15 @@ useEffect(()=>{
 
 useEffect(()=>{
   gsap.from('.puzzle_a_piece-two',{
-    duration: 3,
-    y: '-201',
     scrollTrigger: {
-      trigger: '.puzzle_a_piece-two',
+      trigger: '.puzzle_a',
       start:'top 50%',
-      end:'+=500',
-      toggleActions: 'play none reverse none '
-    }
+      end:'+=600',
+      toggleActions: 'play pause reverse pause '
+    },
+    duration: .8,
+   
+    y:'100'
   })
   
 },{})
@@ -37,7 +38,7 @@ useEffect(()=>{
   return (
     <>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" className={`puzzle puzzle_a`} id={`puzzle_a`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 260" className={`puzzle puzzle_a`} id={`puzzle_a`}>
 
       <path
         fill="white"

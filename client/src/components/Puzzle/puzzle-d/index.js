@@ -1,11 +1,73 @@
-import React from "react";
-
+import React,{useEffect} from "react";
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function PuzzleD() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(()=>{
+    gsap.from('.puzzle_d_piece-one',{
+      duration: 1.2,
+      y: '-180',
+      scrollTrigger: {
+        trigger: '.puzzle_d',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+
+  useEffect(()=>{
+    gsap.from('.puzzle_d_piece-two',{
+      duration: 1.2,
+      y: '-150',
+      scrollTrigger: {
+        trigger: '.puzzle_d',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+
+  useEffect(()=>{
+    gsap.from('.puzzle_d_piece-three',{
+      duration: 1.2,
+      y: '-85',
+      scrollTrigger: {
+        trigger: '.puzzle_d',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
+
+  useEffect(()=>{
+    gsap.from('.puzzle_d_piece-four',{
+      duration: 1.2,
+      y: '-210',
+      scrollTrigger: {
+        trigger: '.puzzle_d',
+        start:'top 50%',
+        end:'+=500',
+        
+        toggleActions: 'play none reverse none '
+      }
+    })  
+  
+  },[])
   return (
     <>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 168 500 250" className={`puzzle puzzle_d`}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 068 500 350" className={`puzzle puzzle_d`}>
   <path
         fill="#FFF"
         stroke="#FFF"
