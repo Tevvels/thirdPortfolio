@@ -48,7 +48,6 @@
 }
 
 .navigation_list {
-  overflow-y: scroll;
   list-style: none;
   position: fixed;
   top: 0;
@@ -56,7 +55,8 @@
   height: 100vh;
   width: 0;
   overflow: hidden;
-  max-width: 290px;
+  max-width: 29rem;
+  max-height: 30rem;
   z-index: 79;
 }
 
@@ -66,18 +66,18 @@
   height: 50px;
   width: 100%;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8));
-  color: grey;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.76)), to(transparent));
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.76), transparent);
+  color: blueviolet;
   text-decoration: none;
 }
 
 .navigation_list-item:active {
-  color: white;
+  color: orange;
 }
 
 .navigation_list-item:hover {
-  color: white;
+  color: olive;
   border-bottom: 1px solid white;
 }
 
@@ -94,23 +94,11 @@
   position: relative;
   -webkit-transform-origin: 1px;
           transform-origin: 1px;
-  background: darkolivegreen;
-}
-
-.hamburger:hover:first-child {
-  background: white;
-}
-
-.hamburger:hover:nth-child(2) {
-  background: grey;
-}
-
-.hamburger:hover:nth-child(3) {
-  background: white;
+  background: blueviolet;
 }
 
 .hamburger_open {
-  background: white;
+  background: olive;
 }
 
 .hamburger_open:first-child {

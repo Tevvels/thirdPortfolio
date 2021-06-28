@@ -1,6 +1,4 @@
-#root,.App{
-    background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 26.5%,red 80%) !important;
-}
+
 .resume{
 
     top: -13.4rem;
@@ -44,5 +42,7 @@
 @media only screen and (max-width:760px){
     .resume{
         width: 100%;
+        scroll-snap-align: start;
+        display: none;
     }
 }

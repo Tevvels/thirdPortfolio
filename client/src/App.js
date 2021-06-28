@@ -1,7 +1,4 @@
 import React from "react";
-
-
-import Footer from './components/Footer'
 import Nav from './components/Nav'
 import Projects from './pages/Projects'
 import About from './pages/About'
@@ -15,6 +12,8 @@ import PuzzleD from './components/Puzzle/puzzle-d'
 import PuzzleE from './components/Puzzle/puzzle-e'
 import PuzzleF from './components/Puzzle/puzzle-f'
 import PuzzleG from './components/Puzzle/puzzle-g'
+import Footer from './components/Footer'
+
 
 
 
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-
       <Nav/>
       <PuzzleE />
       <About />

@@ -16,13 +16,17 @@
       justify-content: space-around;
 }
 
+.projects_anchor {
+  position: relative;
+}
+
 .projects_header {
   background: white;
   color: orange;
   width: 100vw;
-  height: 10em;
+  height: 2em;
   margin: 0;
-  font-size: 25px;
+  font-size: 3rem;
   position: relative;
   text-align: center;
 }
@@ -37,6 +41,31 @@
   text-align: center;
 }
 
+.projects_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  border: 4px solid orange;
+  text-align: center;
+  color: orangered;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+  width: 75%;
+}
+
 .projects_tech {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,9 +77,11 @@
 }
 
 .projects_photo {
-  height: 45%;
-  width: auto;
+  height: 100%;
+  width: 100%;
   position: relative;
+  -webkit-box-shadow: 0 0 1rem inset #bbb;
+          box-shadow: 0 0 1rem inset #bbb;
 }
 
 .projects_title {
@@ -68,17 +99,22 @@
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  height: 40em;
-  width: 30em;
-  border-radius: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20em;
+  width: 40em;
+  border-radius: 2.5%;
   background: #dcc;
   overflow: hidden;
   cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .projects_container:hover {
-  -webkit-box-shadow: inset 0 0 1.4rem #bbb;
-          box-shadow: inset 0 0 1.4rem #bbb;
+  -webkit-box-shadow: 0 0 1.4rem #bbb;
+          box-shadow: 0 0 1.4rem #bbb;
 }
 
 .projects_button {
@@ -96,14 +132,19 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
     height: 100%;
     top: 0;
-    background: transparent;
   }
   .projects_mobile {
     height: 100%;
+    background: orange;
   }
   .projects_container {
     position: relative;
@@ -112,9 +153,6 @@ a {
     height: 90vh;
     width: 90vw;
     margin: 5%;
-  }
-  .projects_mobile {
-    left: 0;
   }
   .projects_hoh {
     top: 16%;

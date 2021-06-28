@@ -1,8 +1,3 @@
-#root, .App {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, orange), color-stop(10.2%, white), color-stop(26.5%, orange), color-stop(80%, red)) !important;
-  background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 26.5%, red 80%) !important;
-}
-
 .resume {
   top: -13.4rem;
   display: -webkit-box;
@@ -53,6 +48,8 @@
 @media only screen and (max-width: 760px) {
   .resume {
     width: 100%;
+    scroll-snap-align: start;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

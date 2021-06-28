@@ -10,7 +10,7 @@ const About = () => {
 
 
     return (
-        <>
+        <div className={`card about`}>
             <Card className={`card about`}>
                 <div className={`about_container`}>
                     <div id={`about`} className={`about_header`}>
@@ -23,8 +23,8 @@ const About = () => {
                         <img className={`about_photo`} alt={aboutDetail.name} src={myFace} />
 
                         <div className={`about_container_inner`}>
-                            <div>
-                            <p className={`about_text`}>
+                            <div className={`about_text`}>
+                            <p >
                                 Full Stack Web Developer, using a background in finance and customer service to provide a friendly and
                                 welcoming environment while ensuring accuracy and professionalism with any project including websites and
                                 software. Recently earned a certificate in Full Stack Web Development from the University of Denver Coding
@@ -75,7 +75,7 @@ const About = () => {
                     </div>
                 </div>
             </Card>
-        </>
+        </div>
     )
 }
 

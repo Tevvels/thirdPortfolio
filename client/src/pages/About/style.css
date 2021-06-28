@@ -2,6 +2,11 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+#root, .App {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, orange), color-stop(10.2%, white), color-stop(26.5%, orange), color-stop(80%, red));
+  background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 26.5%, red 80%);
+}
+
 .about {
   bottom: 1rem;
   display: -webkit-box;
@@ -177,71 +182,54 @@
           box-shadow: 0 0 1rem #bbb inset;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    scroll-snap-align: start;
+    background-color: orange;
+    height: 100vh;
+  }
+  .about_header {
+    width: auto;
+    position: relative;
+    top: 0 !important;
+    padding: 5%;
+    left: 3%;
+  }
+  .about_photo {
+    display: none;
+  }
+  .about_text {
+    width: 100vw;
+    position: relative;
+    font-size: 2rem;
+  }
+  .about_contact, .about_skills {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .about_column {
-    width: 100%;
-    left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, black), to(transparent));
-    background: linear-gradient(to bottom, black 85%, transparent);
-  }
-  .icons {
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-#root {
-  width: 100vw;
-}
-
-@media only screen and (max-width: 720px) {
-  #root {
-    height: 120vh;
-    overflow-y: hidden;
-    background: orange;
-  }
-  .App {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about {
-    left: -25%;
-    background-color: transparent;
-    width: 200vw;
-    height: 100vh;
-    background-color: orange;
-  }
-  .about_header {
-    z-index: 15;
-    position: relative;
-    top: 0 !important;
-    padding: 5%;
-    left: 15%;
-  }
-  .about_photo {
-    display: none;
-  }
-  .about_text {
-    width: 90vw;
-    position: relative;
-  }
-  .about_column {
     background: transparent;
   }
   .about_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
+    background: transparent;
   }
   .about_container_inner {
-    height: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 .navigation{
-    background:linear-gradient(to right,rgba(0,0,0,0.8[]),transparent);
+    background:linear-gradient(to right,rgba(0,0,0,0.8),transparent);
     font-size: 15px;
     color:white;
     display: flex;
@@ -33,7 +33,7 @@
     }
 
     &_list{
-        overflow-y: scroll;
+        // overflow-y: scroll;
         list-style: none;
         position: fixed;
         top: 0;
@@ -41,24 +41,26 @@
         height: 100vh;
         width: 0;
         overflow: hidden;
-        max-width: 290px;
+        max-width: 29rem;
+        max-height: 30rem;
         z-index: 79;
 
         &-item{
-            text-transform:uppercase ;
+            text-transform:uppercase;
             padding-top: 15px;
             height: 50px;
             width: 100%;
             text-align: center;
-            background: linear-gradient(to right,transparent,rgba(0,0,0,0.8));
-            color: grey;
+            background: linear-gradient(to right,transparent,rgba(255,255,255,0.76),transparent);
+            color: blueviolet;
+            ;
             text-decoration: none;
-        
+         
             &:active{
-                color: white;
+                color: orange;
             }
             &:hover{
-                color: white;
+                color: olive;
                 border-bottom: 1px solid white;
             }
         }
@@ -77,21 +79,11 @@
     transition:all .3s;
     position: relative;
     transform-origin: 1px;
-    background:darkolivegreen;
+    background:blueviolet;
 
-    &:hover{
-  
-        &:first-child{
-            background: white;
-        }
-        &:nth-child(2){
-          background: grey;
-        }
-        &:nth-child(3){
-          background: white;
-        }    }
+   
     &_open{
-        background: white;
+        background: olive;
         
         &:first-child{
             transform: rotate(45deg);

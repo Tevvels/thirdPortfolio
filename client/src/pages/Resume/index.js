@@ -12,17 +12,17 @@ const Resume = (props) => {
              className={`resume_header`}>
                 <h1>Resume</h1>
             </div>
-                <Tile positive={'-'} parallax={0.02} className={`tile_resume`}>
+                <div positive={'-'} parallax={0.02} className={`tile_resume`}>
                 <section className="resume_section" >
                 <article className="resume_article" >
                    
-                    <iframe title={`resume`} className="resume_display" src={resume}></iframe>
+                    <iframe title={`resume`} className="resume_display" src={resume}/>
                 
 
                 </article>
             </section>
                         
-                </Tile>
+                </div>
             </Card>
         </>
     )

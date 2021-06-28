@@ -154,7 +154,7 @@
   position: absolute;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   .puzzle_a, .puzzle_b, .puzzle_c, .puzzle_d, .puzzle_e, .puzzle_f, .puzzle_g {
     display: none;
   }
