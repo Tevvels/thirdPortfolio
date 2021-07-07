@@ -17,10 +17,10 @@ body{
 @media only screen and (max-width:768px){
     .card{
         // width: calc(100vw - 1.4rem) !important;
-        width:auto;
+        display: inline-block;
         scroll-snap-align: start;
         height: 100vh !important;
-        overflow: scroll;
+        // overflow: scroll;
  
 
     }

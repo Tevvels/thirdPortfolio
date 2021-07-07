@@ -151,12 +151,16 @@
 
 
     .about{
-        flex-direction: column;
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
 
         scroll-snap-align: start;
         background-color: orange;
         height: 100vh;
+        &_inner{
+        overflow-y: scroll;
 
+        }
         &_header{
             width: auto;
             position: relative;

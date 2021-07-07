@@ -11,7 +11,7 @@ const About = () => {
 
     return (
         <div className={`card about`}>
-            <Card className={`card about`}>
+            <Card className={`about_inner`}>
                 <div className={`about_container`}>
                     <div id={`about`} className={`about_header`}>
                         <h1>{aboutDetail.name}</h1>

@@ -61,21 +61,21 @@ class Contact extends Component {
         return (
             <>
                 <Card className={`card contact`}>
-                    <form onSubmit={this.handleSubmit.bind(this)} method={`POST`}>
+                    <form onSubmit={this.handleSubmit.bind(this)} method={`POST`} className={`contact_form`}>
 
                         <div id={`contact`} className={`contact_header`}>
                             <h1>Contact</h1>
                         </div>
 
-                                <label className={`input_label`}>Name</label>
+                                <label className={`input_label input_name`}>Name</label>
                                 <input className={`input input_name`} id={`name`} name={`name`} type={`text`} placeholder={`name please`} onChange={this.handleChange.bind(this)} required />
 
-                                    <label className={`input_label`}>Email</label>                                 
+                                    <label className={`input_label input_email`}>Email</label>                                 
                                     <input className={`input input_email`} type={`email`} id={`email`} placeholder={`email please`} onChange={this.handleChange.bind(this)} required />
 
-                                    <label className={`input_label`}>A brief message</label>
+                                    <label className={`input_label input_textarea input_textarea-label`}>A brief message</label>
                                     <textarea className={`input input_textarea`} placeholder={"something would like to say"} id={`message`} onChange={this.handleChange.bind(this)} required />
-                                    <button type={`submit`} className={` input input-submit`} placeholder={"something would like to say"}>{buttontext}</button>
+                                    <button type={`submit`} className={` input input_submit`} placeholder={"something would like to say"}>{buttontext}</button>
 
                     </form>
                 </Card>

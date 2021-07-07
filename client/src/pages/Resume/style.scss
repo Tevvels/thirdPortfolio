@@ -41,7 +41,7 @@
 
 @media only screen and (max-width:760px){
     .resume{
-        width: 100%;
+        width: 100vw;
         scroll-snap-align: start;
         display: none;
     }

@@ -8,6 +8,7 @@
     color: orange;
     font-size: 2rem;
     // top:-405rem;
+
 }
 
 
@@ -18,13 +19,21 @@
     }
     #root,.App{
         background: orange;  //!important;
+        display: flex;
+        width: 100%;
     }
+    #root{
+
+    }
+      
     html{
-        scroll-snap-type: x mandatory;
+        scroll-snap-type: both mandatory;
         overflow-x: scroll;
 
     }
-    .App{
-        display: flex
+    
+    .footer{
+        display: none;
+
     }
 }

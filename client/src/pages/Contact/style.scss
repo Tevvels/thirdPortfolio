@@ -23,7 +23,7 @@
     margin: 1.2rem auto;
     z-index: 10;
     position: relative;
-    &-submit{
+    &_submit{
         color:red;
         font-size: 1.5rem;
         background: transparent;
@@ -62,7 +62,56 @@
 
 @media only screen and (max-width:768px){
     .contact{
-        width:100%;
+        height: 100%;
+        scroll-snap-align: start;
+    
+        &_form{
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        &_header{
+            position: absolute;
+            top: 7% !important;
+            left: 15% !important;
+            font-size: 2rem;
+        }
+    }
+
+    .input{
+        width: 90%;
+        font-size: 2rem;
+
+        &_textarea{
+
+            position: absolute;
+            top: 50% !important;
+            left: 5% !important;
+            &-label{
+                left: -5% !important;
+    
+            }
+        }
+
+
+        &_name{
+            position: absolute;
+            top: 25% !important;
+            left: 5% !important;
+        
+        }
+        &_email{
+            position: absolute;
+            top: 37.5% !important;
+            left: 5% !important;
+        
+        }
+        &_submit{
+            position: absolute;
+            top: 85% !important;
+            left: 5% !important;
+        
+        }
 
     }
 }

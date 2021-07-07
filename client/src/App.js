@@ -15,8 +15,6 @@ import PuzzleG from './components/Puzzle/puzzle-g'
 import Footer from './components/Footer'
 
 
-
-
 function App() {
 
   return (

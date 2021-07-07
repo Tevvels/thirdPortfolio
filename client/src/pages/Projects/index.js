@@ -9,10 +9,9 @@ const Projects = () => {
         <div  id={`projects`}  className={`projects card`}>
             <h2 className={`projects_header`}>Projects</h2>
 
-            <Card className={`projects card`}>        
+            <Card className={`projects_inner`}>        
           
                     {projects.map((item,index)=>(
-                        <>
                          
                             <div className={`projects_container`} key={index}>    
                             <a target={`_blank`} className={`projects_anchor`} href={item.ref}> 
@@ -33,7 +32,6 @@ const Projects = () => {
 
                             </div>
 
-                        </>
                     ))}
             </Card>
         </div>

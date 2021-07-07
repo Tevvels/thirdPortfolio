@@ -122,23 +122,26 @@ a{
 @media only screen and (max-width:768px){
     .projects{
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         top: 0;
+        overflow: visible;
       &_mobile{
           height: 100%;
         background: orange;
 
       }
-
-        &_container{
+      &_inner{
+          overflow:scroll;
+      }
+        &_container{display: flex;
             position: relative;
             left: 0;
             top: 0;
-            height:90vh;
+            height:40vh;
             width:90vw;
             margin:5%;
-        }
+        }               
 
 
         
