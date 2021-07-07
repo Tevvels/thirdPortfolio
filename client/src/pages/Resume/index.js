@@ -1,8 +1,8 @@
 import React from 'react'
-import Resumepdf from "../../files/Resume.pdf";
 import Card from '../../components/Card'
 import Tile from '../../components/Tile'
 import "./style.css"
+import resume from '../../data/pdf/Christopher_Watkins_Resume.pdf'
 const Resume = (props) => {
 
     return (
@@ -12,17 +12,17 @@ const Resume = (props) => {
              className={`resume_header`}>
                 <h1>Resume</h1>
             </div>
-                <Tile positive={'-'} parallax={0.02} className={`tile_resume`}>
+                <div positive={'-'} parallax={0.02} className={`tile_resume`}>
                 <section className="resume_section" >
                 <article className="resume_article" >
-                <a href={Resumepdf} className={`resume_download`} download="chris_watkins_resume">download now!</a>
                    
-                    <iframe className="resume_display" src="https://docs.google.com/document/d/1WA5cnnF47GHMRMj3KMGQZHwH_n5AnFCBCFDbJgUTBlk/edit?usp=sharing"></iframe>
+                    <iframe title={`resume`} className="resume_display" src={resume}/>
                 
+
                 </article>
             </section>
                         
-                </Tile>
+                </div>
             </Card>
         </>
     )

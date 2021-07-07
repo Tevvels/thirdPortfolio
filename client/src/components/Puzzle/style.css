@@ -1,0 +1,162 @@
+.puzzle {
+  position: relative;
+}
+
+.puzzle_a {
+  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(orange));
+  background: linear-gradient(to bottom, pink, orange);
+  top: -4.2rem;
+}
+
+.puzzle_a_piece {
+  left: 44.9%;
+}
+
+.puzzle_a_piece-one {
+  top: 114.1rem;
+  left: 45.5%;
+}
+
+.puzzle_a_piece-two {
+  top: 106.8rem;
+  left: 15.29%;
+}
+
+.puzzle_b {
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(pink));
+  background: linear-gradient(to bottom, orange, pink);
+  bottom: -0.5em;
+}
+
+.puzzle_b_piece {
+  position: absolute;
+  z-index: 100;
+}
+
+.puzzle_b_piece-one {
+  top: 130.43rem;
+  left: 68%;
+}
+
+.puzzle_b_piece-two {
+  top: 127.1rem;
+  left: 39.8%;
+}
+
+.puzzle_b_piece-three {
+  top: 159.8rem;
+  left: 29.8%;
+}
+
+.puzzle_b_piece-four {
+  top: 131.3rem;
+  left: 31.9%;
+}
+
+.puzzle_c {
+  top: -12rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(pink));
+  background: linear-gradient(to bottom, orange, pink);
+}
+
+.puzzle_c_piece-one {
+  top: 242.655rem;
+  left: -2.86rem;
+}
+
+.puzzle_c_piece-two {
+  top: 243.7rem;
+  left: 56.6%;
+}
+
+.puzzle_c_piece-three {
+  top: 242.58rem;
+  left: 12%;
+}
+
+.puzzle_d {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(orange));
+  background: linear-gradient(to bottom, pink, orange);
+  top: -13rem;
+}
+
+.puzzle_d_piece-one {
+  top: 256.6rem;
+  left: 28.5%;
+}
+
+.puzzle_d_piece-two {
+  top: 418rem;
+  left: 56%;
+}
+
+.puzzle_d_piece-three {
+  top: 420rem;
+  left: 30%;
+}
+
+.puzzle_d_piece-four {
+  top: 427rem;
+  left: 20.8%;
+}
+
+.puzzle_e {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
+  background: linear-gradient(to top, red, orange);
+}
+
+.puzzle_f {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, white), color-stop(90%, transparent));
+  background: linear-gradient(to top, white 10%, transparent 90%);
+  bottom: -1rem;
+}
+
+.puzzle_f_piece {
+  top: 424rem;
+  left: 70%;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.puzzle_g {
+  top: -13.5rem;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(orange));
+  background: linear-gradient(to top, red, orange);
+}
+
+.puzzle_g_piece-one {
+  top: 380rem;
+  left: 20.5%;
+}
+
+.puzzle_g_piece-two {
+  top: 420rem;
+  left: 25.6%;
+}
+
+.puzzle_g_piece-three {
+  top: 360rem;
+  left: 30.6%;
+}
+
+.puzzle_g_piece-four {
+  top: 400rem;
+  left: 75%;
+}
+
+.puzzle_piece {
+  background: transparent;
+  z-index: 52;
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .puzzle_a, .puzzle_b, .puzzle_c, .puzzle_d, .puzzle_e, .puzzle_f, .puzzle_g {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

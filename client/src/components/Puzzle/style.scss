@@ -1,0 +1,198 @@
+.puzzle{
+    // background:white;
+    // height: 100%;
+    // width: 100%;
+    position: relative;
+
+ 
+
+    &_a{
+        background: linear-gradient(to bottom, pink, orange );
+        top: -4.2rem;
+        &_piece{
+        
+            left:44.9%;
+            &-one{
+                top:114.1rem;
+                left: 45.5%;
+            }
+            &-two{
+                top:106.8rem;
+                left: 15.29%;
+
+            }
+        }
+    }
+    &_b{
+        background: linear-gradient( to bottom, orange, pink);
+        bottom: -0.5em;;
+        &_piece{
+            position: absolute;
+            z-index: 100;
+            
+            &-one{
+                top: 130.43rem;
+                left: 68%;
+    
+            }
+            &-two{
+                top: 127.1rem;
+                left: 39.8%;
+    
+            }
+            &-three{
+                top: 159.8rem;
+                left: 29.8%;
+    
+            }
+            &-four{
+                top: 131.3rem;
+                left: 31.9%;  
+            }
+        }
+    }
+    &_c{
+        top: -12rem;
+        // width: 100vw;
+        background: linear-gradient(to bottom, orange,pink);
+        &_piece{
+
+            &-one{
+
+                top: 242.655rem;
+                left: -2.86rem;
+                
+            }
+            &-two{
+
+                top: 243.7rem;
+                left: 56.6%;
+
+
+            }
+            &-three{
+
+                top: 242.58rem;
+                left: 12%;
+
+
+            }
+        }
+    }
+    &_d{
+        position: relative;
+        background: linear-gradient(to bottom, pink, orange );
+        top:-13rem ;
+        &_piece{
+        
+            &-one{
+
+                
+                top:256.6rem;
+                left: 28.5%;
+
+
+            }
+            &-two{
+
+                
+
+            top:418rem;
+            left: 56%;
+
+            }
+            &-three{
+
+                
+
+
+                top:420rem;
+                left: 30%;
+
+            }
+            &-four{
+
+                
+
+
+                top:427rem;
+                left: 20.8%;
+
+            }
+        }
+    }
+
+    &_e{
+        position: relative;
+        background: linear-gradient(to top, red, orange );
+    }
+    &_f{
+
+        position: relative;
+        background: linear-gradient(to top, white 10%, transparent 90% );
+        bottom: -1rem;
+        &_piece{
+            top: 424rem;
+            left: 70%;
+            transform: rotateZ(45deg);
+
+        }
+    }
+    &_g{
+        top:-13.5rem;
+        position: relative;
+        background: linear-gradient(to top, red, orange );
+        &_piece{
+            &-one{
+                top: 380rem;
+
+                left: 20.5%;
+
+            }
+            &-two{
+                top: 420rem;
+
+                left: 25.6%;
+            }
+            &-three{
+                top: 360rem;
+
+                left: 30.6%;
+            }
+            &-four{
+                top: 400rem;
+
+                left: 75%;
+            }
+
+
+        }
+    }
+
+
+
+    &_piece{
+        background: transparent;
+        z-index: 52;
+        position: absolute;
+        // height: 29vh;
+        // width: 22vw;
+        // border: 1px solid green;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .puzzle{
+        &_a,
+        &_b,
+        &_c,
+        &_d,
+        &_e,
+        &_f,
+        &_g{
+            display: none;
+        }
+    }
+}

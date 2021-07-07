@@ -1,5 +1,79 @@
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+#root, .App {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, orange), color-stop(10.2%, white), color-stop(26.5%, orange), color-stop(80%, red));
+  background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 26.5%, red 80%);
+}
+
+.about {
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  position: relative;
+  height: 100vh;
+}
+
+.about_button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5rem auto 0 auto;
+  height: 3.5rem;
+  width: 12.5rem;
+  border: 5px solid orange;
+  border-radius: 5px;
+}
+
+.about_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5rem;
+}
+
+.about_container_inner {
+  width: 70%;
+  float: right;
+}
+
+.about_a {
+  color: orangered;
+}
+
+.about_i {
+  display: block;
+  height: .35rem;
+  width: 85%;
+  background: orange;
+  border-radius: 5px;
+  position: relative;
+  margin: .5rem auto;
+}
+
 .about_photo {
+  position: absolute;
   overflow: hidden;
+  height: 20rem;
+  width: 20rem;
+  margin-right: 1.3rem;
+  border-radius: 50%;
+  padding: 2rem;
+  border: 5px solid #bbb;
+  left: 0;
 }
 
 .about_contact {
@@ -9,59 +83,151 @@
 }
 
 .about_contact-num {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: 5rem;
+  padding-bottom: .5rem;
+}
+
+.about_contact-section {
+  color: orangered;
+  font-weight: 700;
+}
+
+.about_contact-section-b {
+  margin-left: .5rem;
 }
 
 .about_column {
-  text-align: center;
-  color: rgba(220, 220, 220, 0.5);
-  padding: 25px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(85%, black), to(transparent));
-  background: linear-gradient(to right, black 85%, transparent);
-  height: 94%;
-  width: 40%;
+  height: 23rem;
 }
 
 .about_header {
   position: absolute;
-  left: 45%;
+  left: 30%;
+  font-size: 2rem;
+  top: -40rem;
   color: white;
 }
 
 .about_text {
-  padding-left: 75px;
   padding-right: 75px;
   padding-bottom: 25px;
-  color: white;
   line-height: 2;
   font-size: 20px;
+  height: auto;
+  height: 80%;
+}
+
+.about_skills {
+  width: 80%;
+  position: relative;
+  color: black;
+}
+
+.about_skills-item {
+  font-size: 1.2rem;
+  height: 2rem;
+  margin-left: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_skills-languages, .about_skills-Tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .icons {
-  font-size: 25px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  font-size: 4rem;
+  background: #eff;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 5px solid #eee;
   text-transform: uppercase;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-@media only screen and (max-width: 760px) {
+.icons_a, .icons_i {
+  height: 6rem;
+  width: 6rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons:hover {
+  -webkit-box-shadow: 0 0 1rem #bbb inset;
+          box-shadow: 0 0 1rem #bbb inset;
+}
+
+@media only screen and (max-width: 768px) {
   .about {
+    scroll-snap-align: start;
+    background-color: orange;
+    height: 100vh;
+  }
+  .about_inner {
+    overflow-y: scroll;
+  }
+  .about_header {
+    width: auto;
+    position: relative;
+    top: 0 !important;
+    padding: 5%;
+    left: 3%;
+  }
+  .about_photo {
+    display: none;
+  }
+  .about_text {
+    width: 100vw;
+    position: relative;
+    font-size: 2rem;
+  }
+  .about_contact, .about_skills {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .about_column {
-    width: 100%;
-    left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, black), to(transparent));
-    background: linear-gradient(to bottom, black 85%, transparent);
+    background: transparent;
   }
-  .icons {
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
+  .about_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: transparent;
+  }
+  .about_container_inner {
     width: 100%;
   }
 }

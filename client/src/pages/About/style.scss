@@ -1,72 +1,199 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+#root,.App{
+    background: linear-gradient(to bottom, orange 5%, white 10.2%, orange 26.5%,red 80%); //!important;
+}
 .about{
+    bottom:1rem;
+    display: flex;
+    background: white;
+    position: relative;
+    height: 100vh;
 
+
+    &_button{
+        position: relative;
+        display: flex;
+        color:orange;
+        font-weight: bold;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        margin: .5rem auto 0 auto;
+        height: 3.5rem;
+        width: 12.5rem;
+
+        border: 5px solid orange;
+        border-radius: 5px;
+
+    }
+
+    &_container{
+        display: flex;
+        padding-top: 5rem;
+        &_inner{
+            width: 70%;
+            float: right;
+        }
+    }
+    &_a{
+            color: orangered;
+    }
+    &_i{
+        display: block;
+        height: .35rem;
+        width: 85%;
+        background: orange;
+        border-radius: 5px;
+        position: relative;
+        margin: .5rem auto;
+    }
     &_photo{
+        position: absolute;
         overflow: hidden;
+        height: 20rem;  
+        width: 20rem;
+        margin-right: 1.3rem;
+        border-radius: 50%;
+        padding: 2rem;
+        border: 5px solid #bbb;
+        left: 0;
     }
     &_contact{
         display: flex;
-    
         &-num{
-            flex-direction: column;
+        height: 5rem;
+        padding-bottom: .5rem;
+        }
+
+        &-section{
+            color: orangered;
+            font-weight: 700;
+            &-b{
+                margin-left: .5rem;
+            }
         }
     }
     &_column{
-        text-align: center;
-        color:rgba(220,220,220,0.5) ;
-        padding: 25px;
-        background:linear-gradient(to right, black 85%,transparent) ;
-        height: 94%;
-        width: 40%;
-    
+        height: 23rem;
+        
     }
     &_header{
         position: absolute;
-        left: 45%;
+        left: 30%;
+        font-size:2rem;
+        top:-40rem;
         color: white;
     }
     &_text{
-        padding-left:75px;
         padding-right:75px;
         padding-bottom:25px;
-        color: white;
         line-height: 2;
         font-size: 20px;
+        height: auto;
+        height: 80%;
     }
+    &_skills{
+        width: 80%;
+        position: relative;
+        color: black;
 
-
-
+           &-item{
+               font-size: 1.2rem;
+               height: 2rem;
+               margin-left: .5rem;
+               display: flex;
+               
+           }
+           &-languages,&-Tools{
+               display: flex;
+           } 
+    }
 }
 
 
 
 .icons{
-    font-size: 25px;
-   
-    text-transform: uppercase;
-    
-}
-
-
-
-@media only screen and (max-width:760px){
-    .about{
-        flex-direction: column;
-    
-        &_column{
-            width: 100%;
-            left:0;
-            background: linear-gradient(to bottom, black 85%, transparent);
-        }
-    
-    }
-
-    
-.icons{
-    font-size: 25px;
-    text-transform: uppercase;
+    float: right;
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    font-size: 4rem;
+    background: #eff;
     text-align: center;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    text-transform: uppercase;
+    transition: all .5s;
+    &_a,&_i{
+        height: 6rem;
+        width: 6rem;
+        padding: 1rem;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    &:hover{ 
+           box-shadow: 0 0 1rem #bbb inset;
+    }
 }
 
+
+
+
+@media only  screen and (max-width: 768px){
+
+
+    .about{
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+
+        scroll-snap-align: start;
+        background-color: orange;
+        height: 100vh;
+        &_inner{
+        overflow-y: scroll;
+
+        }
+        &_header{
+            width: auto;
+            position: relative;
+            top: 0 !important;
+            padding: 5%;
+            left: 3%;
+        }
+        &_photo{
+            display: none;
+        }
+        &_text{
+            width: 100vw;
+            position: relative;
+            font-size: 2rem;
+        }
+        &_contact,
+        &_skills{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        &_column{
+            background: transparent;
+        }
+        &_container{
+            flex-direction: column;
+
+            width: 100%;
+            background: transparent;
+            &_inner{
+                width: 100%;
+            }
+
+        }
+    }
 }

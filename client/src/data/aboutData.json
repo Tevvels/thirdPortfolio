@@ -1,0 +1,57 @@
+ {"aboutDetail":
+     {
+        "name":"Christopher Watkins",
+        "phone":"720-498-9054",
+        "email": "chrisbwatkins@gmail.com",
+        "github":"https://www.github.com/tevvels",
+        "linkedin":"https://www.linkedin.com/in/christopher-watkins-315547153/"
+     }
+ ,
+     
+    "aboutIcons":
+    [
+        {
+            "name":"github",
+            "icon":"fab fa-github",
+            "ref": "https://www.github.com/tevvels"
+        },
+        {
+            "name":"phone",
+            "icon":"fas fa-phone",
+            "ref": "https://www.github.com/tevvels"
+        },
+        {
+            "name":"email",
+            "icon":"fas fa-envelope",
+            "ref": "https://www.github.com/tevvels"
+        },
+        {
+            "name":"linkedin",
+            "icon":"fab fa-linkedin",
+            "ref": "https://www.linkedin.com/in/christopher-watkins-315547153/"
+        }
+    ],
+"aboutSkills":
+    {
+        "languages":
+        [
+            {"name":"HTML5"},
+            {"name":"CSS3"},
+            {"name":"JavaScript ES6+"},
+            {"name":"SQL"}
+        ],
+    
+        "Tools":
+        [
+            {"name":"ReactJS"},
+            {"name":"ExpressJS"},
+            {"name":"NodeJS"},
+            {"name":"HandleBars"},
+            {"name":"Jquery"},
+            {"name":"Bootstrap"},
+            {"name":"Sass"}
+        ]
+    }
+}
+
+

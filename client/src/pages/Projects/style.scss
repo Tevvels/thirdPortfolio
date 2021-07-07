@@ -1,66 +1,98 @@
 
 .projects{
-    flex-direction:column;
-    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    background:white;
+    color: orange;
     overflow: hidden;
-        height: 250px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
 
-        
-        position: absolute;
-        border: 2px solid gold;
-        box-shadow:0 0 1px black;
-        background:black;
-    
-    
+    &_anchor{
+    position: relative;
+    }
 
     &_header{
-        position: absolute;
-        left:40%;
-        color: white;
-        font-size: 25px;
+        background: white;
+        color: orange;
+        width: 100vw;
+        
+        height: 2em;
+        margin: 0;
+        font-size: 3rem;
+        position: relative;
+        text-align: center;
     }
 
     &_desc{
-        width: 100%;
+        width: 95%;
         align-items: center;
-        color: black;
         position: relative;
         text-transform: uppercase;
         text-align: center;
     }
 
-    
+    &_box{
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        bottom:5%;
+        left:10%;
+        background: linear-gradient(45deg,rgba(255,255,255,0.7), rgba(255,255,255,0.9),rgba(255,255,255,0.7));
+        border:4px solid orange;
+        text-align: center;
+        color: orangered;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        width:75%;
+    }
+    &_tech{
+        display: flex;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-left: .2rem;
+        color: orange;
+    }
+
 
     
     &_photo{
-        height:60%;
+        height:100%;
         width: 100%;        
         position: relative;
+        box-shadow: 0 0 1rem inset #bbb;
+
     }
     &_title{
-        height: 20%;
+        height: 10%;
         position: relative;
         top: 5%;
         width: 50%;
         text-align:center;
         text-decoration: none;
-        color: lime;
         left: 24.5%;
-
+        
     }
 
     &_container{
-        flex-direction: column;
+        display: flex;
+        text-align: center;
         justify-content: center;
-        align-items: center;
-        height: 450px;
-        width: 500px;
-    background: linear-gradient(77deg, olive,transparent);
-    box-shadow: 0 0 1rem  black;
-        &:hover{
-            z-index: 100;
-        }
+        height: 20em;
+        width: 40em;
+        border-radius: 2.5%; 
+        background: #dcc;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all .2s;
 
+        &:hover{
+            box-shadow: 0 0 1.4rem #bbb;
+        }
     }
 
     &_button{
@@ -78,30 +110,8 @@
 
 
 
-
-    &_hoh{
-        left:16%
-    }
-    &_brawndo{
-        left:54%;
-    ;
-    }
-
-    &_deepvibes{
-        left:44%
-    }
-    
-    &_daburger{
-        left:10%
-    }
-    &_codequiz{
-        left:16%
-    }
-    &_dailyplanner{
-        left:54%
-    }
-
 }
+
 
 a{
 
@@ -109,53 +119,53 @@ a{
 }
 
 
-.flipped{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
-@media only screen and (max-width:760px){
+@media only screen and (max-width:768px){
     .projects{
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        overflow: visible;
+      &_mobile{
+          height: 100%;
+        background: orange;
 
-
-
-
-        &_container{
+      }
+      &_inner{
+          overflow:scroll;
+      }
+        &_container{display: flex;
             position: relative;
             left: 0;
-            top: 25%;
-            height:500px;
-        }
- 
-
-        &_mobile{
-            left:0
-        }
+            top: 0;
+            height:40vh;
+            width:90vw;
+            margin:5%;
+        }               
 
 
         
-    &_hoh{
-        top:16%
-    }
-    &_brawndo{
-        top:54%;
-    ;
-    }
+        &_hoh{
+            top:16%
+        }
+        &_brawndo{
+            top:54%;
+        ;
+        }
 
-    &_deepvibes{
-        top:44%
-    }
-    
-    &_daburger{
-        top:10%
-    }
-    &_codequiz{
-        top:16%
-    }
-    &_dailyplanner{
-        top:54%
-    }
+        &_deepvibes{
+            top:44%
+        }
+        
+        &_daburger{
+            top:10%
+        }
+        &_codequiz{
+            top:16%
+        }
+        &_dailyplanner{
+            top:54%
+        }
 
     }
 

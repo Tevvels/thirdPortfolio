@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import axios from "axios";
 import Card from '../../components/Card'
-import Tile from '../../components/Tile'
 import "./style.css"
 
 
@@ -62,28 +61,22 @@ class Contact extends Component {
         return (
             <>
                 <Card className={`card contact`}>
-                    <form onSubmit={this.handleSubmit.bind(this)} method={`POST`}>
+                    <form onSubmit={this.handleSubmit.bind(this)} method={`POST`} className={`contact_form`}>
 
                         <div id={`contact`} className={`contact_header`}>
                             <h1>Contact</h1>
                         </div>
-                        <Tile className={`tile_contact`} parallax={0.05} positive={' '}>                    
-                            <Tile className={`tile_contact-name`} >
-                                <label className={`input_label`}>Name</label>
-                                <input className={`input`} id={`name`} name={`name`} type={`text`} placeholder={`name please`} onChange={this.handleChange.bind(this)} required />
-                            </Tile>
-                            <Tile className={`tile_contact-email`} >
-                                    <label className={`input_label`}>Email</label>                                 
-                                    <input className={`input`} type={`email`} id={`email`} placeholder={`email please`} onChange={this.handleChange.bind(this)} required />
-                            </Tile>
-                            <Tile className={`tile_contact-textarea`} >
-                                    <label className={`input_label`}>A brief message</label>
-                                    <textarea className={`input`} placeholder={"something would like to say"} id={`message`} onChange={this.handleChange.bind(this)} required />
-                            </Tile>
-                            <Tile className={`tile_contact-submit`} >
-                                    <button type={`submit`} className={` input input-submit`} placeholder={"something would like to say"}>{buttontext}</button>
-                            </Tile>
-                        </Tile>
+
+                                <label className={`input_label input_name`}>Name</label>
+                                <input className={`input input_name`} id={`name`} name={`name`} type={`text`} placeholder={`name please`} onChange={this.handleChange.bind(this)} required />
+
+                                    <label className={`input_label input_email`}>Email</label>                                 
+                                    <input className={`input input_email`} type={`email`} id={`email`} placeholder={`email please`} onChange={this.handleChange.bind(this)} required />
+
+                                    <label className={`input_label input_textarea input_textarea-label`}>A brief message</label>
+                                    <textarea className={`input input_textarea`} placeholder={"something would like to say"} id={`message`} onChange={this.handleChange.bind(this)} required />
+                                    <button type={`submit`} className={` input input_submit`} placeholder={"something would like to say"}>{buttontext}</button>
+
                     </form>
                 </Card>
                

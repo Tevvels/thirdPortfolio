@@ -1,4 +1,5 @@
 .resume {
+  top: -13.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,6 +9,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  background: white;
+  z-index: 2;
+  height: 100vh;
 }
 
 .resume_section {
@@ -42,7 +47,9 @@
 
 @media only screen and (max-width: 760px) {
   .resume {
-    width: 100%;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
